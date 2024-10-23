@@ -1,18 +1,18 @@
+import React, { ButtonHTMLAttributes } from 'react';
 import "../../../index.css"
-import {ButtonHTMLAttributes} from "react";
 
 
 const ButtonDayVariants =  {
   active: 
-    ["size-5 bg-green:500" +
+    ["size-7 bg-primary-600 " +  // Cambiado ':' por '-'
     "flex items-center justify-center " +
-    "text_style text_base text-black:500 " +
+    "text-body text-black-500 " +  // Cambiado ':' por '-'
     "rounded-full"]
   ,
   disable: 
-    ["size-5 bg-yellow:600 "  +
-    "flex items-center justify-center "+
-    "text_style text_base text-black:400 " +
+    ["size-7 bg-primary-200 " +  // Cambiado ':' por '-'
+    "flex items-center justify-center " +
+    "text-body text-black-400 " +  // Cambiado ':' por '-'
     "rounded-full"]
   ,
 }
