@@ -1,19 +1,22 @@
+import { Day } from "../medicationInfo/MedicationWeek"
+import MedInfo from "../medInfo/MedInfo";
 
-enum WeekDays {
-  Monday = "Monday",
-  Tuesday = "Tuesday",
-  Wednesday = "Wednesday",
-  Thursday = "Thursday",
-  Friday = "Friday",
-  Saturday = "Saturday",
-  Sunday = "Sunday"
+type MedInfoComp = {
+  name : string, 
+  dosis : number,
+  time : string,
+  days : Day[] 
+  pillsLeft : number
 }
 
-
-type MedInfo = {
-  name : String, 
-  dosis : Number,
-  time : String,
-  days : WeekDays[] 
+const MedComp = ({name, dosis, time, days, pillsLeft} : MedInfoComp) => {
+    return (
+      <div className="p-3" >
+        <div className="p-3" >
+          <MedInfo time={time} days={days} pillsLeft={pillsLeft}/>
+        </div>      
+      </div>
+    )
 }
 
+export default MedComp;

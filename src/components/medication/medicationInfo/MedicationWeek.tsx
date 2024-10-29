@@ -1,12 +1,12 @@
 import React from "react";
 import WeekDay from "../weekDays/WeekDays";
 
-type Day = {
+export type Day = {
   title: 'Mo' | 'Tu' | 'We' | 'Th' | 'Fr' | 'Sa' | 'Su';
   variant: 'active' | 'disable';
 };
 
-interface MedicationWeekProps {
+export interface MedicationWeekProps {
   days: Day[]
 }
 

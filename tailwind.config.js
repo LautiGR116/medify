@@ -4,45 +4,50 @@ module.exports = {
   content: ["./src/**/*.{js,jsx,ts,tsx}"],
   theme: {
     extend: {
-      text_style : ["text-clip text-pretty font-sans-serif"],
-      text_title : ["text-xl"],
-      text_body : ["text-base"],
-      text_small: ["text-sm"],
+      fontFamily: {
+        "sans-serif": ["Roboto", "sans-serif"],
+      },
+      fontSize: {
+        title: ["1.25rem", "1.75rem"],  // tamaño de fuente y altura de línea opcional
+        body: ["1rem", "1.5rem"],       // 'base' (16px) con altura de línea opcional
+        sub: ["0.875rem", "1.25rem"],   // 'sm' (14px)
+        comp: ["0.75rem", "1rem"], 
+      },
       colors: {
         primary: {
-          300: "#CDEBE8",
-          400: "#BAE3DE",
+          400: "#E7F4F3",
           500: "#CCE5E2", // color base
-          600: "#A0BBB8",
-          700: "#758F8D",
+          600: "#99CBC5",
+          700: "#81B9B3",
+          800: "#579991"
         },
         secondary: {
-          300: "#EDF1CD",
-          400: "#E6EAB9",
+          400: "#E4EABE",
           500: "#EFF4D6", // color base
-          600: "#C3C8AC",
-          700: "#979C83",
+          600: "#E0E7B6",
+          700: "#C9D785",
+          800: "#9EB04E",
         },
         terciary: {
-          300: "#E9DAFF",
-          400: "#E0CDFF",
+          400: "#E7DAFD",
           500: "#E5D6FE", // color base
-          600: "#B9ABD1",
-          700: "#8C7FA3",
+          600: "#D8C7F5",
+          700: "#C9ABFB",
+          800: "#AB79FF",
         },
-        grey: {
-          300: "#D0D2D5",
-          400: "#BEBFC2",
+        scale: {
+          100: "#FAFAFA",
+
+          400: "#D4D4D4",
           500: "#BFC1C5", // color base
-          600: "#979A9E",
-          700: "#707275",
+          600: "#848D92",
+          700: "#4C5C5F",
+          800: "#2B3F3D",
+
+          1000: "#1B2F3D",
         },
-        red: {
-          300: "#FAA4A4",
-          400: "#F78181",
-          500: "#E93A3A", // color base
-          600: "#BF2F2F",
-          700: "#962525",
+        alert: {
+          500: "#DD5B5B"
         },
       },
     },

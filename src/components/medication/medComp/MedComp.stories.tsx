@@ -1,12 +1,15 @@
-import MedicationWeek from "./MedicationWeek";
+import MedComp from "./MedComp";
 
 export default {
-  title: 'MedicationWeek',
-  component: MedicationWeek,
+  title: 'MedComp',
+  component: MedComp,
 };
 
 export const Default = {
   args : {
+    name: "Paracetamol",
+    dosis: 24,
+    time: "12:00",
     days: [
       {
         title: "Mo",
@@ -36,6 +39,7 @@ export const Default = {
         title: "Su",
         variant: "disable"
       }
-    ]
+    ],
+    pillsLeft: 5
   }
 }

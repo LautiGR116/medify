@@ -1,12 +1,15 @@
-import MedicationWeek from "./MedicationWeek";
+import MedInfo from './MedInfo';
 
 export default {
-  title: 'MedicationWeek',
-  component: MedicationWeek,
+  title: 'MedInfo',
+  component: MedInfo,
 };
 
 export const Default = {
   args : {
+    pillsLeft: 5,
+    text: "X amount of pills left",
+    time : "12:00",
     days: [
       {
         title: "Mo",
