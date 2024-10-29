@@ -11,7 +11,7 @@ export interface MedicationWeekProps {
 }
 
 const ContainerConstraints = {
-  container: "flex items-center space-x-2"
+  container: "flex items-center space-x-1"
 }
 
 const MedicationWeek = (weekend : MedicationWeekProps) => { 

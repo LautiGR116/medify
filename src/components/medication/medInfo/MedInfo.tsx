@@ -10,7 +10,7 @@ type MedInfoProps = {
 
 const MedInfo = ({pillsLeft, time, days} : MedInfoProps) => {
     return (
-        <div className="p-3" >
+        <div className="pr-1" >
           <IconText icon={Pill} text={pillsLeft.toString() +" amount of pills left"}/>
           <IconText icon={Pill} text={time}/>            
           <MedicationWeek days={days}/>

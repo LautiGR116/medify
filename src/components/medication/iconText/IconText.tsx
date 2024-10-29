@@ -9,9 +9,9 @@ interface IconTextProps {
 
 const IconText = ({icon, text} : IconTextProps) => {
   return (
-    <div className="flex items-center space-x-4">
-      <img src={icon} alt="icon" className="size-8"/>
-      <p className="text-lg text-scale-1000">{text}</p>
+    <div className="flex items-center space-x-2">
+      <img src={icon} alt="icon" className="size-4"/>
+      <p className="text-base font-medium text-scale-1000">{text}</p>
     </div>
   );
 };

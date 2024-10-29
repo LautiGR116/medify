@@ -4,14 +4,20 @@ module.exports = {
   content: ["./src/**/*.{js,jsx,ts,tsx}"],
   theme: {
     extend: {
+      height: {
+        button : ["152px"]
+      },
+      width: {
+        button : ["348px"]
+      },
       fontFamily: {
         "sans-serif": ["Roboto", "sans-serif"],
       },
       fontSize: {
-        title: ["1.25rem", "1.75rem"],  // tamaño de fuente y altura de línea opcional
-        body: ["1rem", "1.5rem"],       // 'base' (16px) con altura de línea opcional
-        sub: ["0.875rem", "1.25rem"],   // 'sm' (14px)
-        comp: ["0.75rem", "1rem"], 
+        title2: ["22px", "28px"], // tamaño de fuente y altura de línea opcional
+        body: ["17px", "22px"],  // 'base' (16px) con altura de línea opcional
+        caption1: ["12px", "16px"],  // tamaño de componente pequeño
+        callout1: ["16px", "21px"]
       },
       colors: {
         primary: {
