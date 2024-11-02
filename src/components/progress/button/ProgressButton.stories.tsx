@@ -12,8 +12,8 @@ export const Default = {
       text: "Meditación",
       textColor: "text-primary-500",
       unfilledColor : "bg-scale-800",
-      filledColor : "bg-primary-500",
-      timeText: "1:30",
+      filledColor : "bg-primary-800",
+      timeText: "0:10",
       progress: 0.5,
       icon:<MdiPlay/>
   }
