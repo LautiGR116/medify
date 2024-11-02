@@ -15,6 +15,5 @@ export const Default = {
       filledColor : "bg-primary-800",
       timeText: "0:10",
       progress: 0.5,
-      icon:<MdiPlay/>
   }
 };

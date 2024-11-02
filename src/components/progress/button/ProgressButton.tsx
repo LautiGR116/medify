@@ -1,5 +1,7 @@
 import React, { ReactNode, ButtonHTMLAttributes, useState, useEffect } from 'react';
 import { MaterialSymbolsCheck } from '../../svg/Completed';
+import { MdiPlay } from '../../svg/Play';
+import { MaterialSymbolsPause } from '../../svg/Pause';
 
 interface ProgressButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
   text: string;
@@ -8,12 +10,10 @@ interface ProgressButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
   filledColor: string;
   progress: number;
   timeText: string;
-  icon: ReactNode;
 }
 
 const ProgressButton: React.FC<ProgressButtonProps> = ({
-  text, textColor, filledColor, unfilledColor, progress, timeText, icon,
-  ...props
+  text, textColor, filledColor, unfilledColor, progress, timeText, ...props
 }) => {
   console.log(timeText)
   const [minutes, seconds] = timeText.split(':').map(Number);
@@ -88,7 +88,7 @@ const ProgressButton: React.FC<ProgressButtonProps> = ({
         ) : (
           <>
             <span className='px-2.5'>{formatTime()}</span>
-            {React.cloneElement(icon as React.ReactElement, { className: "size-10" })}
+            {isRunning ? (<MdiPlay className="size-10" />) : (<MaterialSymbolsPause className='size-10'/>)}
           </>
         )}
 
