@@ -1,29 +1,33 @@
 import React, { ReactNode, ButtonHTMLAttributes } from 'react';
 
 interface ProgressButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
+  text: string;
   textColor: string;
-  bgColor: string;
+  unfilledColor: string;
+  filledColor: string;
   progress: number;
-  icon: ReactNode; // Permite pasar un componente de ícono
+  timeText: string;
+  icon: ReactNode;
 }
 
 const ProgressButton: React.FC<ProgressButtonProps> = ({
-  textColor, bgColor, progress, icon,
+  text, textColor, filledColor, unfilledColor, progress, timeText, icon,
   ...props
 }) => {
-  console.log(`textColor: ${textColor}, bgColor: ${bgColor}`);
+  console.log(`Classes: ${unfilledColor} relative w-80 h-16 flex items-center justify-between p-4 overflow-hidden rounded-xl ${textColor}`);
+  console.log(`Styles: backgroundImage: linear-gradient(to right, ${filledColor} ${progress * 100}%, transparent 0%)`);
   return (
     <button
-      role="progressbar"
-      className={`${textColor} ${bgColor} w-80 h-16 flex items-center justify-between p-4`}
+      className={`${unfilledColor} relative w-80 h-16 flex items-center justify-between p-4 overflow-hidden rounded-xl ${textColor}`}
       {...props}
     >
-      <span>{icon}</span> {/* Aquí el ícono como componente */}
-      <div className="w-full bg-gray-200 rounded-full h-2 overflow-hidden mx-2">
-        <div
-          className="bg-blue-500 h-full transition-all duration-300"
-          style={{ width: `${progress}%`}}
-        ></div>
+      <div
+       className={"relative z-10 flex justify-between w-full items-center px-2"}
+       >
+        <span className="font-bold">{text}</span>
+        <div className={`${unfilledColor} w-full h-2 rounded-full`}></div>
+        <span className='px-2.5'>{timeText}</span>
+        {React.cloneElement(icon as React.ReactElement, { className: "size-10" })}
       </div>
     </button>
   );

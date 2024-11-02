@@ -1,6 +1,6 @@
-import React from 'react';
 import ProgressButton from './ProgressButton';
-import { WeuiArrowFilled } from '../../svg/Arrow';
+import { MaterialSymbolsPause } from '../../svg/Pause';
+import { MdiPlay } from '../../svg/Play';
 
 export default {
   title: 'ProgressButton',
@@ -9,9 +9,12 @@ export default {
 
 export const Default = {
   args : {
+      text: "Meditación",
       textColor: "text-primary-500",
-      bgColor : "bg-scale-1000",
+      unfilledColor : "bg-scale-800",
+      filledColor : "bg-primary-500",
+      timeText: "1:30",
       progress: 0.5,
-      icon: WeuiArrowFilled
+      icon:<MdiPlay/>
   }
 };
