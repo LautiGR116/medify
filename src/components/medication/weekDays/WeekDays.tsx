@@ -1,37 +1,30 @@
 import React, { ButtonHTMLAttributes } from 'react';
 import "../../../index.css"
 
+const DayVariants = {
+  active: [
+    "size-8 bg-primary-500 flex items-center justify-center text-callout1 text-scale-1000 rounded-full font-normal"
+  ],
+  disable: [
+    "size-8 bg-scale-100 flex items-center justify-center text-callout1 text-scale-600 rounded-full font-normal"
+  ]
+};
 
-const ButtonDayVariants =  {
-  active: 
-    ["size-7 bg-primary-600 " +  // Cambiado ':' por '-'
-    "flex items-center justify-center " +
-    "text-body text-black-500 " +  // Cambiado ':' por '-'
-    "rounded-full"]
-  ,
-  disable: 
-    ["size-7 bg-primary-200 " +  // Cambiado ':' por '-'
-    "flex items-center justify-center " +
-    "text-body text-black-400 " +  // Cambiado ':' por '-'
-    "rounded-full"]
-  ,
-}
-
-type ButtonDayVariant = keyof typeof ButtonDayVariants;
+type DayVariant = keyof typeof DayVariants;
 
 
-export interface WeekDayProps extends ButtonHTMLAttributes<HTMLButtonElement> {
+export interface WeekDayProps {
   title : "Mo" | "Tu" | "We" | "Th" | "Fr"| "Sa" | "Su" ,
-  variant: ButtonDayVariant; 
+  variant: DayVariant; 
 }
 
-const WeekDay = ({variant, title, ...props} : WeekDayProps) => {
-  const variantClasses = ButtonDayVariants[variant];
-  console.log(variantClasses);
+const WeekDay = ({variant, title} : WeekDayProps) => {
+  const variantClasses = DayVariants[variant];
+  const all = variantClasses.join(' ')
   return (
-    <button className={variantClasses.join(' ')} {...props}>
+    <h1 className={all} >
         {title}
-    </button>
+    </h1>
   );
 };
 

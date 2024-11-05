@@ -1,17 +1,17 @@
 import React from "react";
 import WeekDay from "../weekDays/WeekDays";
 
-type Day = {
+export type Day = {
   title: 'Mo' | 'Tu' | 'We' | 'Th' | 'Fr' | 'Sa' | 'Su';
   variant: 'active' | 'disable';
 };
 
-interface MedicationWeekProps {
+export interface MedicationWeekProps {
   days: Day[]
 }
 
 const ContainerConstraints = {
-  container: "flex items-center space-x-2"
+  container: "flex items-center space-x-1"
 }
 
 const MedicationWeek = (weekend : MedicationWeekProps) => { 
