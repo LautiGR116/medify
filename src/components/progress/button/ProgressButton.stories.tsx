@@ -1,6 +1,6 @@
 import ProgressButton from './ProgressButton';
-import { MaterialSymbolsPause } from '../../svg/Pause';
-import { MdiPlay } from '../../svg/Play';
+import { MaterialSymbolsPause } from '../../svg/progressButton/Pause';
+import { MdiPlay } from '../../svg/progressButton/Play';
 
 export default {
   title: 'ProgressButton',

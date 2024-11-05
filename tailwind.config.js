@@ -5,10 +5,12 @@ module.exports = {
   theme: {
     extend: {
       height: {
-        button : ["152px"]
+        button : ["152px"],
+        navbar: ["66px"]
       },
       width: {
-        button : ["348px"]
+        button : ["348px"],
+        navbar: ["320px"]
       },
       fontFamily: {
         "sans-serif": ["Roboto", "sans-serif"],

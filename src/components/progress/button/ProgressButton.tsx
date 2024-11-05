@@ -1,7 +1,7 @@
 import React, { ReactNode, ButtonHTMLAttributes, useState, useEffect } from 'react';
-import { MaterialSymbolsCheck } from '../../svg/Completed';
-import { MdiPlay } from '../../svg/Play';
-import { MaterialSymbolsPause } from '../../svg/Pause';
+import { MaterialSymbolsCheck } from '../../svg/progressButton/Completed';
+import { MdiPlay } from '../../svg/progressButton/Play';
+import { MaterialSymbolsPause } from '../../svg/progressButton/Pause';
 
 interface ProgressButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
   text: string;
