@@ -19,7 +19,7 @@ const NavBar = (pages  : Button[]) => {
         {pages.map((page) => {
           return (
             <NavBarButton {...page.args} onClick={() => setPage(page.args.title)} />
-        }}
+          )})}
       </div>
     );
 }
