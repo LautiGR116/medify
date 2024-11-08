@@ -1,27 +1,22 @@
-import React, { ButtonHTMLAttributes, useEffect, useState } from "react"
-import NavBarButton from "./Button"
+import React, { ButtonHTMLAttributes } from "react";
+import NavBarButton from "./Button";
 
-  interface ButtonI extends ButtonHTMLAttributes<HTMLButtonElement> {
-    variant: "active" | "disable";
-    icon : React.ReactElement;
-  }
-
-  type Button = {
-    icon: React.ReactElement;
-    args: ButtonI;
-  }
-
-const NavBar = (pages  : Button[]) => {
-  const [page , setPage] = useState("")
-
-  return (
-      <div className="p-3 w-navbar h-navbar bg-scale-100 flex justify-between">
-        {pages.map((page) => {
-          return (
-            <NavBarButton {...page.args} onClick={() => setPage(page.args.title)} />
-          )})}
-      </div>
-    );
+interface ButtonI extends ButtonHTMLAttributes<HTMLButtonElement> {
+  icon: JSX.Element;
 }
+
+interface NavBarProps {
+  pages: ButtonI[];
+}
+
+const NavBar = ({ pages }: NavBarProps) => {
+  return (
+    <div className="p-3 w-navbar h-navbar bg-scale-100 flex justify-between rounded-b-2xl">
+      {pages.map((page, index) => (
+        <NavBarButton key={index} icon={page.icon} />
+      ))}
+    </div>
+  );
+};
 
 export default NavBar;
