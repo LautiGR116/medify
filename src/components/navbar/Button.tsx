@@ -3,11 +3,11 @@ import { ButtonHTMLAttributes } from "react";
 
 const ButtonVariants = {
   active: {
-    buttonVariant: "bg-scale-100 transition duration-300 ease-in-out",
+    buttonVariant: "bg-scale-100 transition duration-300 ease-in-out focus: outline-none border-none",
     iconVariant: "text-scale-1000 size-6 transition duration-300 ease-in-out"
   },
   disable: {
-    buttonVariant: "bg-primary-800 transition duration-300 ease-in-out",
+    buttonVariant: "bg-primary-800 transition duration-300 ease-in-out focus: outline-none border-none",
     iconVariant: "text-primary-200 size-6 transition duration-300 ease-in-out"
   }
 };

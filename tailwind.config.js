@@ -27,14 +27,13 @@ module.exports = {
       },
       colors: {
         primary: {
-          400: "#E7F4F3",
+          200: "#DDECEA",
           500: "#CCE5E2", // color base
           600: "#99CBC5",
           700: "#81B9B3",
           800: "#579991"
         },
         secondary: {
-          400: "#E4EABE",
           500: "#EFF4D6", // color base
           600: "#E0E7B6",
           700: "#C9D785",
@@ -49,6 +48,7 @@ module.exports = {
         },
         scale: {
           100: "#FAFAFA",
+          
           300: "#D4D4D4",
           400: "#EBEBEB",
           500: "#BFC1C5", // color base
