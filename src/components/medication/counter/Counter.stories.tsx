@@ -2,7 +2,7 @@ import Counter from './Counter';
 import {PhMinusFill, PhPlusFill} from "../../svg/medication/Medication";
 
 export default {
-  title: 'Counter',
+  title: 'Medication/Counter',
   component: Counter,
 };
 

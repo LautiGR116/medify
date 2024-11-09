@@ -1,7 +1,7 @@
 import MedComp from "./MedComp";
 
 export default {
-  title: 'MedComp',
+  title: 'Medication/MedComp',
   component: MedComp,
 };
 

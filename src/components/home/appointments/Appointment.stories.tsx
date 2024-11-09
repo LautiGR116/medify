@@ -1,7 +1,7 @@
 import Appointment from "./Appontment";
 
 export default {
-  title: 'Appointment reminder',
+  title: 'Appointment/Appointment reminder',
   component: Appointment
 }
 

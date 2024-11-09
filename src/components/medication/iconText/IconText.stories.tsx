@@ -3,7 +3,7 @@ import IconText from './IconText';
 import { HalfFilledPill } from "../../svg/medication/Medication";
 
 export default {
-  title: 'IconText',
+  title: 'Cummon-comp/IconText',
   component: IconText,
 };
 

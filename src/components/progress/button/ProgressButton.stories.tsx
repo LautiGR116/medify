@@ -3,7 +3,7 @@ import { MaterialSymbolsPause } from '../../svg/progressButton/Pause';
 import { MdiPlay } from '../../svg/progressButton/Play';
 
 export default {
-  title: 'ProgressButton',
+  title: 'Progress/ProgressButton',
   component: ProgressButton,
 };
 
