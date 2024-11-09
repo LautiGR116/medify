@@ -18,7 +18,9 @@ module.exports = {
         "sans-serif": ["Roboto", "sans-serif"],
       },
       fontSize: {
-        title2: ["22px", "28px"], // tamaño de fuente y altura de línea opcional
+        title1: ["28px", "34px"],
+        title2: ["22px", "28px"],
+        title3: ["20px", "25px"],// tamaño de fuente y altura de línea opcional
         body: ["17px", "22px"],  // 'base' (16px) con altura de línea opcional
         caption1: ["12px", "16px"],  // tamaño de componente pequeño
         callout1: ["16px", "21px"]
@@ -47,8 +49,8 @@ module.exports = {
         },
         scale: {
           100: "#FAFAFA",
-
-          400: "#D4D4D4",
+          300: "#D4D4D4",
+          400: "#EBEBEB",
           500: "#BFC1C5", // color base
           600: "#848D92",
           700: "#4C5C5F",

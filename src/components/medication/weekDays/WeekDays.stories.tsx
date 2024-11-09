@@ -1,4 +1,3 @@
-import React from 'react';
 import WeekDay from './WeekDays';
 
 export default {
