@@ -3,7 +3,7 @@ import IconText from './IconText';
 import Pill from "../../svg/pill.png";
 
 export default {
-  title: 'IconText',
+  title: 'Cummon-comp/IconText',
   component: IconText,
 };
 

@@ -1,7 +1,7 @@
 import MedicationWeek from "./MedicationWeek";
 
 export default {
-  title: 'MedicationWeek',
+  title: 'Medication/MedicationWeek',
   component: MedicationWeek,
 };
 

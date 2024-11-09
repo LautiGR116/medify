@@ -4,7 +4,7 @@ import { MaterialSymbolsLightPill } from "../svg/navbar/Pill";
 import { WeuiArrowFilled } from "../svg/Arrows";
 
 export default {
-  title: "Header",
+  title: "Cummon-comp/Header",
   component: Header,
 }
 

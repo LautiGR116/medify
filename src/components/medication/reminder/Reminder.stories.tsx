@@ -2,7 +2,7 @@ import {MaterialSymbolsPillOutline} from "../../svg/medication/Medication";
 import Reminder from "./Reminder";
 
 export default {
-  title: "Medication reminder",
+  title: "Medication/Reminder",
   component: Reminder
 }
 
