@@ -1,6 +1,6 @@
 import { Day } from "../medicationInfo/MedicationWeek";
 import MedInfo from "../medInfo/MedInfo";
-import { WeuiArrowFilled } from "../../svg/FowardArrow";
+import { WeuiArrowFilled } from "../../svg/Arrows";
 
 type MedInfoComp = {
   name: string;

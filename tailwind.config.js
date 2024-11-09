@@ -5,10 +5,12 @@ module.exports = {
   theme: {
     extend: {
       height: {
+        header: ["107px"],
         button : ["152px"],
         navbar: ["66px"]
       },
       width: {
+        header: ["393px"],
         button : ["348px"],
         navbar: ["320px"]
       },
