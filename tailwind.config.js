@@ -15,15 +15,15 @@ module.exports = {
         navbar: ["320px"]
       },
       fontFamily: {
-        "sans-serif": ["Roboto", "sans-serif"],
+        'sans-serif': ['SF Pro Display', 'Roboto', 'sans-serif'],
       },
       fontSize: {
-        title1: ["28px", "34px"],
-        title2: ["22px", "28px"],
-        title3: ["20px", "25px"],// tamaño de fuente y altura de línea opcional
-        body: ["17px", "22px"],  // 'base' (16px) con altura de línea opcional
-        caption1: ["12px", "16px"],  // tamaño de componente pequeño
-        callout1: ["16px", "21px"]
+        title1: ['28px', '34px'],
+        title2: ['22px', '28px'],
+        title3: ['20px', '25px'],
+        body: ['17px', '22px'],
+        caption1: ['12px', '16px'],
+        callout1: ['16px', '21px'],
       },
       colors: {
         primary: {
