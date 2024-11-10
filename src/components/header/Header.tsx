@@ -1,6 +1,6 @@
 import { ReactElement } from "react";
-import { WeuiBackOutlined } from "../svg/Arrows";
 import React from "react";
+import { RoundedArrow } from "../svg/common/Common";
 
 const HeaderVariants = {
   title: {
@@ -10,9 +10,8 @@ const HeaderVariants = {
   icon: ["size-8 text-scale-1000"]
 };
 
-interface HeaderI { 
+interface HeaderI {
   title: string;
-  arrowBack: boolean;
   comp: Icon | null;
 }
 
@@ -20,27 +19,25 @@ interface Icon {
   icon: ReactElement;
 }
 
-const Header = ({ title, arrowBack, comp }: HeaderI) => {
+const Header = ({ title, comp }: HeaderI) => {
   function getTitleVariant() {
     return title === "home" ? HeaderVariants.title.home.join(" ") : HeaderVariants.title.default.join(" ");
   }
 
   return (
-    <div className={`flex w-header h-header rounded-t-2xl bg-scale-100 items-end px-4 py-2 ${arrowBack ? "justify-between" : "justify-center"}`}>
-      {arrowBack ? (
+      <div className="flex w-header h-header rounded-t-2xl bg-scale-100 items-end px-4 py-2 justify-between">
         <div className="flex-shrink-0 mb-2">
-          <WeuiBackOutlined className={HeaderVariants.icon.join(" ")} />
+          <RoundedArrow className={`${HeaderVariants.icon.join(" ")} transform -rotate-90`} />
         </div>
-      ) : null}
-      <span title={title} className={`${getTitleVariant()} flex-1 ${arrowBack ? "text-center" : ""} mb-2`}>
+        <span title={title} className={`${getTitleVariant()} flex-1 text-center mb-2`}>
         {title}
       </span>
-      {comp ? (
-        <div className="flex-shrink-0 mb-2">
-          {React.cloneElement(comp.icon, { className: HeaderVariants.icon.join(" ") })}
-        </div>
-      ) : null}
-    </div>
+        {comp ? (
+            <div className="flex-shrink-0 mb-2">
+              {React.cloneElement(comp.icon, { className: HeaderVariants.icon.join(" ") })}
+            </div>
+        ) : null}
+      </div>
   );
 };
 
