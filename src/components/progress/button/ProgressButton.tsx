@@ -75,9 +75,9 @@ const ProgressButton: React.FC<ProgressButtonProps> = ({
           <div className="flex items-center space-x-2">
             <span className="text-callout1 font-bold font-sans">{formatTime()}</span>
             {isRunning ? (
-              <MdiPlay className="size-6" />
-            ) : (
               <MaterialSymbolsPause className="size-6" />
+            ) : (
+              <MdiPlay className="size-6" />
             )}
           </div>
         )}
