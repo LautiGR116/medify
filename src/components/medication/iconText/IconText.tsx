@@ -1,20 +1,22 @@
 import React from "react";
-import "../../../index.css"
 
 interface IconTextProps {
-  icon: string;     // Icon svg format
-  text: string;
+    icon: React.ReactNode;
+    text: string;
+    size?: number;
 }
 
-
-const IconText = ({icon, text} : IconTextProps) => {
-  return (
-    <div className="flex items-center space-x-2">
-      <img src={icon} alt="icon" className="size-4"/>
-      <p className="text-base font-medium text-scale-1000">{text}</p>
-    </div>
-  );
+const IconText = ({ icon, text, size = 16 }: IconTextProps) => {
+    return (
+        <div className="flex items-center space-x-2">
+            {React.cloneElement(icon as React.ReactElement, {
+                width: size,
+                height: size,
+                className: "text-scale-1000",
+            })}
+            <p className="font-sans text-body font-medium text-scale-1000">{text}</p>
+        </div>
+    );
 };
-
 
 export default IconText;

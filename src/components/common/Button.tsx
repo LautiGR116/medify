@@ -6,6 +6,7 @@ type ButtonState = 'default' | 'pressed' | 'disabled' | 'destructive';
 
 interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
     variant?: ButtonVariant;
+    label?: string;
     size?: ButtonSize;
     state?: ButtonState;
 }
