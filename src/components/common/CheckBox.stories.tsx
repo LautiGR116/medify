@@ -3,7 +3,7 @@ import { Meta, StoryFn } from '@storybook/react';
 import Checkbox from "./CheckBox";
 
 export default {
-    title: "Components/Checkbox",
+    title: "Common/Checkbox",
     component: Checkbox,
     argTypes: {
         shape: {

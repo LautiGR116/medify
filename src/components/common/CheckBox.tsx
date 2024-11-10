@@ -19,10 +19,10 @@ const Checkbox = ({
     const checkboxStyle = `flex items-center space-x-1`;
     const boxStyle = `flex items-center justify-center ${
         shape === "circular" ? "rounded-full" : "rounded"
-    } w-6 h-6 border-2 border-scale-1000 ${
+    } w-[24px] h-[24px] border-2 border-scale-1000 ${
         checked && shape === "square" ? "bg-transparent" : checked ? "bg-scale-1000" : "bg-scale-100"
     }`;
-    const iconStyle = `text-scale-1000`;
+    const iconStyle = `text-scale-1000 w-full h-full flex items-center justify-center`;
 
     return (
         <div className={checkboxStyle} onClick={handleClick}>
@@ -30,8 +30,6 @@ const Checkbox = ({
                 {checked && shape === "square" && (
                     React.cloneElement(<CheckBox />, {
                         className: iconStyle,
-                        width: 24,
-                        height: 24,
                     })
                 )}
             </div>

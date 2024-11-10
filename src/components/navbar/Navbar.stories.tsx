@@ -6,7 +6,7 @@ import { MaterialSymbolsCheck } from "../svg/progressButton/Completed";
 import NavBar from "./Navbar";
 
 export default {
-  title: 'Cummon-comp/NavBar',
+  title: 'Common/NavBar',
   component: NavBar,
 }
 

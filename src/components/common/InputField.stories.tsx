@@ -4,7 +4,7 @@ import InputField from './InputField';
 import {EmptyBox} from "../svg/common/Common";
 
 export default {
-    title: 'InputField',
+    title: 'Common/InputField',
     component: InputField,
     argTypes: {
         label: { control: 'text', defaultValue: 'InputText' },
