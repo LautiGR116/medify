@@ -14,6 +14,5 @@ export const Default = {
       unfilledColor : "bg-scale-800",
       filledColor : "bg-primary-800",
       timeText: "0:10",
-      progress: 0.5,
   }
 };
