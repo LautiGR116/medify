@@ -67,7 +67,7 @@ module.exports = {
           700: "#4C5C5F",
           800: "#2B3F3D",
 
-          1000: "#1B2F2D",
+          1000: "#1B2F3D",
         },
         alert: {
           500: "#DD5B5B"

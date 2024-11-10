@@ -44,7 +44,7 @@ const CustomCircularProgress = ({ text, progress }: CustomCircularProgressProps)
           dominantBaseline="central"
           textAnchor="middle"
           fill="currentColor"  // Hace que use el color del contenedor
-          className="text-primary-800 text-xl font-semibold"  // Color y tamaño del texto
+          className="text-primary-800 text-3xl font-semibold"  // Color y tamaño del texto
         >
           {text}
         </text>
