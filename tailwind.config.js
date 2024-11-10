@@ -5,32 +5,46 @@ module.exports = {
   theme: {
     extend: {
       height: {
+        header: ["107px"],
         button : ["152px"],
-        navbar: ["66px"]
+        journalContent : ["51px"],
+        navbar: ["66px"],
+        progressFrame : ["246px"]
       },
       width: {
+        header: ["393px"],
         button : ["348px"],
-        navbar: ["320px"]
+        navbar: ["320px"],
+        journalContent: ["187px"]
       },
       fontFamily: {
-        "sans-serif": ["Roboto", "sans-serif"],
+        'sans-serif': ['SF Pro Display', 'Roboto', 'sans-serif'],
       },
       fontSize: {
-        title2: ["22px", "28px"], // tamaño de fuente y altura de línea opcional
-        body: ["17px", "22px"],  // 'base' (16px) con altura de línea opcional
-        caption1: ["12px", "16px"],  // tamaño de componente pequeño
-        callout1: ["16px", "21px"]
+        title1: ['28px', '34px'],
+        title2: ['22px', '28px'],
+        title3: ['20px', '25px'],
+        body: ['17px', '22px'],
+        caption1: ['12px', '16px'],
+        caption2: ['11px', '13px'],
+        callout1: ['16px', '21px'],
+      },
+      stroke: {
+        tracing: ["#CCE5E2"],
+        utrack : ["#1B2F3D"],
+      },
+      strokeWidth: {
+        cirProg : ["6"],
       },
       colors: {
         primary: {
-          400: "#E7F4F3",
+          200: "#DDECEA",
           500: "#CCE5E2", // color base
           600: "#99CBC5",
           700: "#81B9B3",
           800: "#579991"
         },
         secondary: {
-          400: "#E4EABE",
           500: "#EFF4D6", // color base
           600: "#E0E7B6",
           700: "#C9D785",
@@ -45,8 +59,9 @@ module.exports = {
         },
         scale: {
           100: "#FAFAFA",
-
-          400: "#D4D4D4",
+          200: "#616161",
+          300: "#D4D4D4",
+          400: "#EBEBEB",
           500: "#BFC1C5", // color base
           600: "#848D92",
           700: "#4C5C5F",

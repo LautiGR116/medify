@@ -1,35 +1,47 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { ButtonHTMLAttributes } from "react";
 
 const ButtonVariants = {
-  active : {
-    buttonVariant : "size-10 bg-primary-500 flex items-center justify-center rounded-full",
-    iconVariant : "text-scale-1000 size-6"
+  active: {
+    buttonVariant: "bg-scale-100 transition duration-300 ease-in-out focus: outline-none border-none",
+    iconVariant: "text-scale-1000 size-6 transition duration-300 ease-in-out"
   },
-  disable : {
-    buttonVariant : "size-10 bg-scale-100 flex items-center justify-center rounded-full",
-    iconVariant : "size-6"
+  disable: {
+    buttonVariant: "bg-primary-800 transition duration-300 ease-in-out focus: outline-none border-none",
+    iconVariant: "text-primary-200 size-6 transition duration-300 ease-in-out"
   }
-}
+};
+
 interface ButtonI extends ButtonHTMLAttributes<HTMLButtonElement> {
-  variant: "active" | "disable";
-  icon : JSX.Element;
+  icon: JSX.Element;
 }
 
-const NavBarButton = ({variant, icon, ...props} : ButtonI) => {
-  const buttonVariant = ButtonVariants[variant].buttonVariant;
-  const iconVariant = ButtonVariants[variant].iconVariant;
-  console.log(iconVariant);
-  console.log(buttonVariant);
-  console.log(icon);
-  return (
+const NavBarButton = ({ icon, ...props }: ButtonI) => {
+  const [active, setActive] = React.useState(false);
 
-    <button className="rounded-full size-10 flex" {...props} >
-      <div className={buttonVariant}>
-        {React.cloneElement(icon, {className: iconVariant})}
+  function handleTimeout() {
+    setActive(true);
+    setTimeout(() => {
+      setActive(false);
+    }, 1000);
+  }
+
+  function isActive() {
+    return active ? ButtonVariants["disable"] : ButtonVariants["active"];
+  }
+
+  return (
+    <button
+      className={`size-10 flex items-center justify-center rounded-full ${isActive().buttonVariant}`}
+      {...props}
+      onClick={handleTimeout}
+    >
+      {/* Div que ocupa todo el tamaño del botón y centra el icono */}
+      <div className="flex items-center justify-center w-full h-full">
+        {React.cloneElement(icon, { className: `${isActive().iconVariant} flex-shrink-0` })}
       </div>
     </button>
-  ) 
-}
+  );
+};
 
 export default NavBarButton;

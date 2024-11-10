@@ -1,7 +1,7 @@
 import MedInfo from './MedInfo';
 
 export default {
-  title: 'MedInfo',
+  title: 'Medication/MedInfo',
   component: MedInfo,
 };
 

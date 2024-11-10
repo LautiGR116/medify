@@ -3,7 +3,7 @@ import { MynauiCalendar } from "../svg/navbar/Calendar";
 import NavBarButton from "./Button";
 
 export default {
-  title: 'NavBarButton',
+  title: 'Common/NavBarButton',
   component: NavBarButton,
 };
 

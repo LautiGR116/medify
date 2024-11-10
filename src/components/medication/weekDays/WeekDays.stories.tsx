@@ -1,8 +1,7 @@
-import React from 'react';
 import WeekDay from './WeekDays';
 
 export default {
-  title: 'WeekDays',
+  title: 'Medication/WeekDays',
   component: WeekDay,
 };
 
