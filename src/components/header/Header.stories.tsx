@@ -7,9 +7,15 @@ export default {
 }
 
 export const Default = {
-
 args: {
   name: "default",
+  title: "Default",
+  comp: {icon: <EmptyBox /> , iconColor: "text-primary-500", bgColor: ""}}
+}
+
+export const Home = {
+args: {
+  name: "home",
   title: "Home",
   comp: {icon: <EmptyBox /> , iconColor: "text-primary-500", bgColor: ""}}
 }

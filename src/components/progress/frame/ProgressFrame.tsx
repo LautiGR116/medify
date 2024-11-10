@@ -14,9 +14,19 @@ const ProgressFrame = ({ text,progress, tag, subtag }: ProgressFrameProps) => {
       <CustomCircularProgress text={text} progress={progress} />
       <span className="font-sans font-bold text-title2 text-scale-1000 text-center">{tag}</span>
       <span className="font-sans text-body text-scale-600 text-center mb-3">{subtag}</span>
-      <ToogleButton text1="Mission" text2="Badges"/>
     </div>
   );
 };
+
+const SwitchButtons = (badge: boolean) => {
+  const [isBadge, setIsBadge] = useState(badge);
+  return (
+    <div>
+      <button className=""/>
+      <button className=""/>
+    </div>
+  ) 
+}
+
 
 export default ProgressFrame;
