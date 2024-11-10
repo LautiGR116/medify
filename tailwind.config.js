@@ -8,7 +8,8 @@ module.exports = {
         header: ["107px"],
         button : ["152px"],
         journalContent : ["51px"],
-        navbar: ["66px"]
+        navbar: ["66px"],
+        progressFrame : ["246px"]
       },
       width: {
         header: ["393px"],
@@ -27,6 +28,13 @@ module.exports = {
         caption1: ['12px', '16px'],
         caption2: ['11px', '13px'],
         callout1: ['16px', '21px'],
+      },
+      stroke: {
+        tracing: ["#CCE5E2"],
+        utrack : ["#1B2F3D"],
+      },
+      strokeWidth: {
+        cirProg : ["6"],
       },
       colors: {
         primary: {
