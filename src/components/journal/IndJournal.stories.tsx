@@ -1,16 +1,28 @@
 import { Description } from "@mui/icons-material"
 import IndJournal from "./IndJournal"
+import { useState } from "react"
 
 export default { 
   title : 'Journal/IndJournal',
   component: IndJournal,
 }
 
-export const Default = {
+export const Close = {
   args: {
-    feeling: "good",
+    feeling: "Very Good",
     time: "12:00",
     description: "I am feeling good",
+    day: "Today, 12th July",
+    isOpen: () => false
+  }
+}
+
+export const Open = {
+  args: {
+    feeling: "Very Sad",
+    time: "12:00",
+    description: "I am feeling very sad",
+    day: "Today, 12th July",
     isOpen: () => true
   }
 }

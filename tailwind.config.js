@@ -7,12 +7,14 @@ module.exports = {
       height: {
         header: ["107px"],
         button : ["152px"],
+        journalContent : ["51px"],
         navbar: ["66px"]
       },
       width: {
         header: ["393px"],
         button : ["348px"],
-        navbar: ["320px"]
+        navbar: ["320px"],
+        journalContent: ["187px"]
       },
       fontFamily: {
         'sans-serif': ['SF Pro Display', 'Roboto', 'sans-serif'],
@@ -23,6 +25,7 @@ module.exports = {
         title3: ['20px', '25px'],
         body: ['17px', '22px'],
         caption1: ['12px', '16px'],
+        caption2: ['11px', '13px'],
         callout1: ['16px', '21px'],
       },
       colors: {
@@ -48,7 +51,7 @@ module.exports = {
         },
         scale: {
           100: "#FAFAFA",
-          
+          200: "#616161",
           300: "#D4D4D4",
           400: "#EBEBEB",
           500: "#BFC1C5", // color base

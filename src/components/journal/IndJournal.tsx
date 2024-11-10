@@ -1,52 +1,38 @@
 import { useState } from "react";
-import { HealthiconsHappy, HealthiconsSadOutline, PhSmileyLight, PhSmileyMehLight, PhSmileySadLight } from "../svg/FaceEmoji";
+import { HealthiconsHappy, HealthiconsSadOutline, PhSmileyLight, PhSmileyMehLight, PhSmileySadLight } from "../svg/journal/FaceEmoji";
+import { IconamoonArrowDown2, IconamoonArrowUp2 } from "../svg/Arrows";
 
-type Feeling = "very-good"|"good"|"neutral"|"sad"|"very-sad";
-
-const Variant = {
-  open : {
-    sideColor : [""]
-
-  },
-  close: [""]
-}
+type Feeling = "Very Good" | "Good" | "Neutral" | "Sad" | "Very Sad";
 
 const FeelingToIcon = {
-  "very-good": <HealthiconsHappy className=""/>,
-  "good": <PhSmileyLight className=""/>,
-  "neutral": <PhSmileyMehLight className=""/>,
-  "sad": <PhSmileySadLight className=""/>,
-  "very-sad": <HealthiconsSadOutline className=""/>
-}
+  "Very Good": <HealthiconsHappy className="text-scale-1000 size-10" />,
+  "Good": <PhSmileyLight className="text-scale-1000 size-10" />,
+  "Neutral": <PhSmileyMehLight className="text-scale-1000 size-10" />,
+  "Sad": <PhSmileySadLight className="text-scale-1000 size-10" />,
+  "Very Sad": <HealthiconsSadOutline className="text-scale-1000 size-10" />
+};
 
 interface IndJournalI {
-  feeling: Feeling,
-  time: string,
-  description: string,
-  isOpen: () => boolean
-
+  feeling: Feeling;
+  description: string;
 }
 
-const IndJournal = ({feeling, time, description, isOpen} : IndJournalI) => {
+const IndJournal = ({ feeling, description }: IndJournalI) => {
   return (
-    <div className="">
-      <div className="flex justify-between py-3">
-        <span className="text-title2 font-bold text-scale-1000 px-2">{feeling}</span>
-        {!open  ? <span className="text-title2 font-bold text-scale-1000">{time}</span> : null}
-      </div>  
-      <>
-        {!open  ? <span className="text-title2 font-bold text-scale-1000">{time}</span> : null}
-        <div className="flex justify-center">
+    <div className="bg-scale-100 w-journalContent h-journalContent border-gray-300 rounded-lg">
+      <div className="flex items-start">
+        <div className="flex items-start pr-2">
           {FeelingToIcon[feeling]}
-          <>
-            <span className="text-title2 font-semibold text-scale-1000 py-2">{feeling}</span>
-            <span className="text-body text-scale-300">{description}</span>
-          </>
         </div>
-        
-      </>
+        <div className="mt-2">
+          <span className="text-body font-semibold text-scale-1000">
+            {feeling}
+          </span>
+          <p className="text-caption2 text-scale-800">{description}</p>
+        </div>
+      </div>
     </div>
   );
-}
+};
 
 export default IndJournal;
