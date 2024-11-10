@@ -3,7 +3,7 @@ import { Meta, StoryFn } from '@storybook/react';
 import ToggleButton from './ToggleButton';
 
 export default {
-    title: 'ToggleButton',
+    title: 'Common/ToggleButton',
     component: ToggleButton,
     argTypes: {
         text1: { control: 'text', defaultValue: 'Option 1' },

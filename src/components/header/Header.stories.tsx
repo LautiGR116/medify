@@ -2,7 +2,7 @@ import Header from "./Header";
 import {EmptyBox} from "../svg/common/Common";
 
 export default {
-  title: "Cummon-comp/Header",
+  title: "Common/Header",
   component: Header,
 }
 
