@@ -12,7 +12,7 @@ const Reminder: React.FC<ReminderProps> = ({ icon, title, subtitle }) => {
             <div className="w-[68px] h-[68px] flex items-center justify-center rounded-full bg-scale-100">
                 {React.cloneElement(icon, { className: 'text-primary-600', height: 48, width: 48 })}
             </div>
-            <div className="pl-2 space-y-2">
+            <div className="pl-2 space-y-2 text-left">
                 <div className="font-bold text-title3 text-scale-1000">{title}</div>
                 <div className="text-callout1 font-medium text-scale-1000">{subtitle}</div>
             </div>

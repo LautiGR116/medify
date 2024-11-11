@@ -31,7 +31,7 @@ const Appointment: React.FC<AppointmentProps> = ({
                 <div className={`${dateColor} text-body font-semibold`}>{dayName}</div>
                 <div className={`${dateColor} text-title1 font-bold -mt-1`}>{day}</div>
             </div>
-            <div className="pl-2">
+            <div className="pl-2 text-left">
                 <div className="font-medium text-caption1 text-scale-1000">{name}</div>
                 <div className="text-title3 font-bold text-scale-1000">{title}</div>
                 <div className="text-callout1 font-medium text-scale-1000">{time}</div>
