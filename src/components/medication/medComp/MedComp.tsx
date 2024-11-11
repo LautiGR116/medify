@@ -1,5 +1,5 @@
 import React from 'react';
-import { Day } from "../medicationInfo/MedicationWeek";
+import { Day } from "../medWeekend/MedicationWeek";
 import MedInfo from "../medInfo/MedInfo";
 import { RoundedArrow } from "../../svg/common/Common";
 

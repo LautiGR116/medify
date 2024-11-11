@@ -1,6 +1,6 @@
 import React from 'react';
 import IconText from "../iconText/IconText";
-import MedicationWeek, { Day } from "../medicationInfo/MedicationWeek";
+import MedicationWeek, { Day } from "../medWeekend/MedicationWeek";
 import { HalfFilledPill, Clock } from "../../svg/medication/Medication"; // Adjust path as needed
 
 type MedInfoProps = {
