@@ -25,20 +25,20 @@ const Button: React.FC<ButtonProps> = ({
 
     const variantStyles = {
         filled: {
-            default: 'bg-primary-500 text-scale-1000',
-            pressed: 'bg-primary-700 text-scale-1000',
+            default: 'bg-primary-600 text-scale-1000',
+            pressed: 'bg-primary-500 text-scale-1000',
             disabled: 'bg-scale-500 text-scale-700 cursor-not-allowed',
             destructive: 'bg-alert-500 text-scale-1000',
         },
         outlined: {
-            default: 'border border-primary-500 text-primary-500',
-            pressed: 'border border-primary-700 text-primary-700',
+            default: 'border border-primary-600 text-primary-600',
+            pressed: 'border border-primary-500 text-primary-500',
             disabled: 'border border-scale-500 text-scale-700 cursor-not-allowed',
             destructive: 'border border-alert-500 text-alert-500',
         },
         text: {
-            default: 'text-primary-500 bg-transparent',
-            pressed: 'text-primary-700 bg-transparent',
+            default: 'text-primary-600 bg-transparent',
+            pressed: 'text-primary-500 bg-transparent',
             disabled: 'text-scale-700 bg-transparent cursor-not-allowed',
             destructive: 'text-alert-500 bg-transparent',
         },
