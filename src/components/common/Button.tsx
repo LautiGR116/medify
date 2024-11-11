@@ -9,12 +9,14 @@ interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
     label?: string;
     size?: ButtonSize;
     state?: ButtonState;
+    width?: string;  // Add width prop for fixed width
 }
 
 const Button: React.FC<ButtonProps> = ({
                                            variant = 'filled',
                                            size = 'medium',
                                            state = 'default',
+                                           width,  // Use width prop
                                            children,
                                            ...props
                                        }) => {
@@ -47,7 +49,7 @@ const Button: React.FC<ButtonProps> = ({
     const styles = `${baseStyles} ${sizeStyles} ${variantStyles[variant][state]}`;
 
     return (
-        <button className={styles} disabled={state === 'disabled'} {...props}>
+        <button className={styles} style={{ width }} disabled={state === 'disabled'} {...props}>
             {children}
         </button>
     );
