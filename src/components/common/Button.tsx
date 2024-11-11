@@ -18,11 +18,13 @@ const Button: React.FC<ButtonProps> = ({
                                            children,
                                            ...props
                                        }) => {
-
+    // Base styles for the button
     const baseStyles = 'font-sans font-semibold text-center rounded-md focus:outline-none';
 
+    // Styles for different sizes
     const sizeStyles = size === 'medium' ? 'text-caption1 px-4 py-2' : 'text-body px-4 py-3';
 
+    // Styles for different variants and states
     const variantStyles = {
         filled: {
             default: 'bg-primary-600 text-scale-1000',
@@ -44,11 +46,12 @@ const Button: React.FC<ButtonProps> = ({
         },
     };
 
+    // Combine all styles based on props
     const styles = `${baseStyles} ${sizeStyles} ${variantStyles[variant][state]}`;
 
     return (
         <button className={styles} disabled={state === 'disabled'} {...props}>
-            {children}
+            {children || props.label}
         </button>
     );
 };

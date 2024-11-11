@@ -1,30 +1,32 @@
-import Appointment from "./Appontment";
+import React from 'react';
+import { Meta, StoryFn } from '@storybook/react';
+import Appointment from "./Appointment";
 
 export default {
-  title: 'Appointment/Appointment reminder',
-  component: Appointment
-}
+  title: 'Appointment/Appointment Reminder',
+  component: Appointment,
+  argTypes: {
+    variant: {
+      control: 'select',
+      options: ['upcoming', 'history'],
+    },
+    arrow: {
+      control: 'boolean',
+    },
+  },
+} as Meta<typeof Appointment>;
 
-export const Reminder = {
-  key: "reminder",
-  args: {
-    name: "Dr. John Doe",
-    title: "Radiography",
-    time: "14:00",
-    day: "15",
-    dayName: "TUE",
-    variant: 'reminder'
-  }
+const Template: StoryFn<typeof Appointment> = (args) => {
+  return <Appointment {...args} />;
 };
 
-export const Upcomming = {
-  key: "upcomming",
-  args: {
-    name: "Dr. John Doe",
-    title: "Radiography",
-    time: "14:00",
-    day: "15",
-    dayName: "TUE",
-    variant: 'upcomming'
-  }
+export const Upcoming = Template.bind({});
+Upcoming.args = {
+  name: "Dr. John Doe",
+  title: "Radiography",
+  time: "14:00",
+  day: "15",
+  dayName: "TUE",
+  arrow: true,
+  variant: 'upcoming',
 };
