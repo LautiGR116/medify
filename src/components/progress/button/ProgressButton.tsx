@@ -52,7 +52,7 @@ const ProgressButton: React.FC<ProgressButtonProps> = ({
   return (
     <button
       onClick={handleClick}
-      className={`relative w-80 h-16 overflow-hidden rounded-xl ${textColor} ${filledColor}`}
+      className={`focus:outline-none border-none relative w-80 h-16 overflow-hidden rounded-xl ${textColor} ${filledColor}`}
       {...props}
     >
       {/* Fondo de progreso con transición suave */}
@@ -67,13 +67,13 @@ const ProgressButton: React.FC<ProgressButtonProps> = ({
       </div>
 
       {/* Contenido estático en el frente */}
-      <div className="relative z-10 flex items-center justify-between w-full h-full px-4">
-        <span className="font-bold font-sans">{text}</span>
+      <div className="relative z-10 flex items-center justify-between w-full h-full">
+        <span className="font-medium text-callout1 font-sans">{text}</span>
         {completed ? (
           <MaterialSymbolsCheck className="size-6" />
         ) : (
           <div className="flex items-center space-x-2">
-            <span className="text-callout1 font-bold font-sans">{formatTime()}</span>
+            <span className="text-callout1 font-medium font-sans">{formatTime()}</span>
             {isRunning ? (
               <MaterialSymbolsPause className="size-6" />
             ) : (
