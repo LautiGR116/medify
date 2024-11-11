@@ -8,8 +8,8 @@ export default {
 export const Active = {
   key: "active", 
   args : {
-  variant : "active",
-  title : "We"
+    variant : "active",
+    title : "We"
   }
 };
 
