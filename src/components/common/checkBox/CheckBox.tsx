@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { CheckBox } from "../svg/common/Common";
+import { CheckBox } from "../../svg/common/Common";
 
 const Checkbox = ({
                       shape,

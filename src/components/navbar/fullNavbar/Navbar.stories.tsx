@@ -1,9 +1,11 @@
-import { MynauiCalendar } from "../svg/navbar/Calendar";
-import { MdiLightHeart } from "../svg/navbar/Heart";
-import { IcRoundHome } from "../svg/navbar/Home";
-import { MaterialSymbolsLightPill } from "../svg/navbar/Pill";
-import { MaterialSymbolsCheck } from "../svg/progressButton/Completed";
 import NavBar from "./Navbar";
+import {
+  IcRoundHome,
+  MaterialSymbolsLightPill,
+  MdiLightHeart,
+  MdiProgressStar,
+  MynauiCalendar
+} from "../../svg/navbar/NavbarIcons";
 
 export default {
   title: 'Common/NavBar',
@@ -24,7 +26,9 @@ export const Default = {
       },
       {
         icon: <MdiLightHeart />,
-        
+      },
+      {
+        icon: <MdiProgressStar/>,
       }
     ]
   }

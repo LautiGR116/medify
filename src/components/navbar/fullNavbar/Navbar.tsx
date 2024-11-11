@@ -1,5 +1,5 @@
 import React, { ButtonHTMLAttributes } from "react";
-import NavBarButton from "./Button";
+import NavBarButton from "../button/NavbarButton";
 
 interface ButtonI extends ButtonHTMLAttributes<HTMLButtonElement> {
   icon: JSX.Element;

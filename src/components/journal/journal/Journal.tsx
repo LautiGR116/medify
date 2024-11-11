@@ -1,6 +1,6 @@
 import { useState } from "react";
-import { IconamoonArrowDown2, IconamoonArrowUp2 } from "../svg/Arrows";
-import IndJournal from "./IndJournal";
+import { IconamoonArrowDown2, IconamoonArrowUp2 } from "../../svg/Arrows";
+import IndJournal from "../singleJournal/IndJournal";
 
 type Feeling = "Very Good" | "Good" | "Neutral" | "Sad" | "Very Sad";
 

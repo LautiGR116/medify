@@ -7,8 +7,8 @@ const ButtonVariants = {
     iconVariant: "text-scale-1000 size-6 transition duration-300 ease-in-out"
   },
   disable: {
-    buttonVariant: "bg-primary-800 transition duration-300 ease-in-out focus: outline-none border-none",
-    iconVariant: "text-primary-200 size-6 transition duration-300 ease-in-out"
+    buttonVariant: "bg-primary-200 transition duration-300 ease-in-out focus: outline-none border-none",
+    iconVariant: "text-primary-800 size-6 transition duration-300 ease-in-out"
   }
 };
 
@@ -32,7 +32,7 @@ const NavBarButton = ({ icon, ...props }: ButtonI) => {
 
   return (
     <button
-      className={`size-10 flex items-center justify-center rounded-full ${isActive().buttonVariant}`}
+      className={`focus:outline-none border-none size-10 flex items-center justify-center rounded-full ${isActive().buttonVariant}`}
       {...props}
       onClick={handleTimeout}
     >

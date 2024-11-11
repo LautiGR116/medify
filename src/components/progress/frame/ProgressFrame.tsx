@@ -1,5 +1,5 @@
 import CustomCircularProgress from "./CircularProgress";
-import ToogleButton from "../../common/ToggleButton";
+import ToogleButton from "../../common/toggleButton/ToggleButton";
 
 interface ProgressFrameProps {
   text: string;
