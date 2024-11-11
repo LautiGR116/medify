@@ -1,4 +1,4 @@
-import { MynauiCalendar } from "../svg/navbar/Calendar";
+import {MdiProgressStar, MynauiCalendar } from "../svg/navbar/Calendar";
 import { MdiLightHeart } from "../svg/navbar/Heart";
 import { IcRoundHome } from "../svg/navbar/Home";
 import {TablerPillFilled} from "../svg/navbar/Pill";
@@ -24,7 +24,9 @@ export const Default = {
       },
       {
         icon: <MdiLightHeart />,
-        
+      },
+      {
+        icon: <MdiProgressStar/>,
       }
     ]
   }

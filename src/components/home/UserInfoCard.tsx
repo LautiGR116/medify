@@ -1,8 +1,14 @@
+import HomePageLevelStreak from "./levelStreak/HomePageLevelStreak";
+import {MdiFire, Stars} from "../svg/home/HomeIcons";
+
+
 const UserInfoCard = () => {
+  const fireIcon = <MdiFire className="text-[#DF5430] w-[44px] h-[50px] transform scale-x-[-1]"/>
+  const starsIcon = <Stars/>
     return (
-        <div className="bg-white shadow-md rounded-lg p-4 m-4">
-            <h2 className="text-lg font-semibold">Level 5: Health Enthusiast</h2>
-            <p className="text-sm text-gray-600">Next level: 200/400 xp</p>
+        <div className="w-[360px] h-[160px] flex space-x-12">
+          <HomePageLevelStreak icon={fireIcon} title={"Don't forget!"} subtitle={"You have a 7 day streak"}/>
+          <HomePageLevelStreak icon={starsIcon} title={"You are on level 5!"} subtitle={"150 point to level up!"}/>
         </div>
     );
 };

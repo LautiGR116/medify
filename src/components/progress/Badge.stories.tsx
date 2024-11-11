@@ -5,6 +5,12 @@ export default {
     component: Badge,
 };
 
+export const Default = {
+    args: {
+        variant: "default"
+    }
+}
+
 export const Onfire = {
     args: {
         variant: "onfire"

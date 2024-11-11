@@ -26,7 +26,7 @@ const Header = ({name, title, comp }: HeaderI) => {
   }
 
   return (
-      <div className="flex w-header h-header rounded-t-2xl bg-scale-100 items-end px-4 py-2 justify-between">
+      <div className="flex w-header h-header rounded-t-[53px] bg-scale-100 items-end px-4 py-2 justify-between">
         { name !== "home" ? (
           <>
          <div className="flex-shrink-0 mb-2">
@@ -36,7 +36,7 @@ const Header = ({name, title, comp }: HeaderI) => {
             {title}
           </span>
           </>) :
-          <span className={`${getTitleVariant()} flex-1 mb-2`}>
+          <span className={`${getTitleVariant()} flex-1 mb-2 text-left`}>
            {title}
           </span>
         }

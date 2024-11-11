@@ -9,9 +9,9 @@ export default {
 
 export const Default = {
   args : {
-      text: "Meditación",
-      textColor: "text-primary-500",
-      unfilledColor : "bg-scale-800",
+      text: "MEDITATE",
+      textColor: "text-scale-1000",
+      unfilledColor : "bg-scale-100",
       filledColor : "bg-primary-800",
       timeText: "0:10",
   }

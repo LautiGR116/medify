@@ -21,13 +21,15 @@ module.exports = {
         'sans-serif': ['SF Pro Display', 'Roboto', 'sans-serif'],
       },
       fontSize: {
+        largeTitle: ['34px', '41px'],
         title1: ['28px', '34px'],
         title2: ['22px', '28px'],
         title3: ['20px', '25px'],
         body: ['17px', '22px'],
+        callout1: ['16px', '21px'],
+        footnote: ['13px', '18px'],
         caption1: ['12px', '16px'],
         caption2: ['11px', '13px'],
-        callout1: ['16px', '21px'],
       },
       stroke: {
         tracing: ["#CCE5E2"],

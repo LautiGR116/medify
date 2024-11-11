@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { IconamoonArrowDown2, IconamoonArrowUp2 } from "../svg/Arrows";
 import IndJournal from "./IndJournal";
+import {RoundedArrow} from "../svg/common/Common";
 
 type Feeling = "Very Good" | "Good" | "Neutral" | "Sad" | "Very Sad";
 
@@ -19,15 +20,16 @@ interface JournalI {
 
 const Journal = ({ journals, time, day }: JournalI) => {
   const [isOpen, setIsOpen] = useState(false);
+  const color = isOpen ? "bg-primary-800" : "bg-primary-500";
 
   return (
     <div className="flex bg-scale-100 w-button h-auto rounded-lg overflow-clip">
       <div className="h-auto w-4" >
-        <div className="bg-secondary-800 h-full w-full " />
+        <div className={`${color} h-full w-full`} />
       </div>
 
       {/* Main content */}
-      <div className="flex flex-col justify-between items-start py-0.5 px-1 w-full">
+      <div className="flex flex-col justify-between items-start py-0.5 px-2.5 w-full">
         <div className="flex items-center justify-between w-full">
           <span className="text-body font-bold text-scale-1000 px-0">{day}</span>
           {!isOpen && <span className="ml-2 text-scale-600">{time}</span>}
@@ -52,9 +54,9 @@ const Journal = ({ journals, time, day }: JournalI) => {
 
 const Arrow = ({ isOpen, returnClick }: { isOpen: boolean; returnClick: () => void }) => {
   return (
-    <button className="bg-inherit" onClick={returnClick}>
+    <button className="bg-inherit focus:outline-none border-none" onClick={returnClick}>
       <div className="flex items-center">
-        {!isOpen ? <IconamoonArrowDown2 className="text-scale-1000 size-3 border-none" /> : <IconamoonArrowUp2 className="text-scale-1000 size-3 border-none" />}
+        {!isOpen ? <RoundedArrow className="text-scale-1000 border-none rotate-180 w-6 h-6" /> : <RoundedArrow className="text-scale-1000 border-none w-6 h-6" />}
       </div>
     </button>
   );
