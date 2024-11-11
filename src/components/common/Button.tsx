@@ -19,7 +19,7 @@ const Button: React.FC<ButtonProps> = ({
                                            ...props
                                        }) => {
 
-    const baseStyles = 'font-sans font-semibold text-center rounded-md';
+    const baseStyles = 'font-sans font-semibold text-center rounded-md focus:outline-none';
 
     const sizeStyles = size === 'medium' ? 'text-caption1 px-4 py-2' : 'text-body px-4 py-3';
 

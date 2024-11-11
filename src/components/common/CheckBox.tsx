@@ -3,14 +3,12 @@ import { CheckBox } from "../svg/common/Common";
 
 const Checkbox = ({
                       shape,
-                      checked: initialChecked,
                       label,
                   }: {
     shape: "square" | "circular";
-    checked: boolean;
     label: string;
 }) => {
-    const [checked, setChecked] = useState(initialChecked);
+    const [checked, setChecked] = useState(false);
 
     const handleClick = () => {
         setChecked(!checked);

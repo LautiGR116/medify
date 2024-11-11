@@ -10,7 +10,6 @@ export default {
             control: { type: "radio" },
             options: ["square", "circular"],
         },
-        checked: { control: "boolean" },
         label: { control: "text" },
     },
 } as Meta<typeof Checkbox>;
@@ -21,6 +20,5 @@ const Template:StoryFn<typeof Checkbox> = (args) => <Checkbox {...args} />;
 export const Default = Template.bind({});
 Default.args = {
     shape: "square",
-    checked: false,
     label: "Checkbox",
 };
