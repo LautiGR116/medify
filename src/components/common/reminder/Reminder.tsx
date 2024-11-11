@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import Checkbox from "./CheckBox";
+import Checkbox from "../checkBox/CheckBox";
 
 interface Option {
     label: string;

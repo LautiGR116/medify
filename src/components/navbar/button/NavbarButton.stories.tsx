@@ -1,6 +1,5 @@
-import { MdiLightHeart } from "../svg/navbar/Heart";
-import { MynauiCalendar } from "../svg/navbar/Calendar";
-import NavBarButton from "./Button";
+import NavBarButton from "./NavbarButton";
+import {MynauiCalendar} from "../../svg/navbar/NavbarIcons";
 
 export default {
   title: 'Common/NavBarButton',

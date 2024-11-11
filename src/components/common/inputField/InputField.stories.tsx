@@ -1,7 +1,7 @@
 import React from 'react';
 import { Meta, StoryFn } from '@storybook/react';
 import InputField from './InputField';
-import {EmptyBox} from "../svg/common/Common";
+import {EmptyBox} from "../../svg/common/Common";
 
 export default {
     title: 'Common/InputField',

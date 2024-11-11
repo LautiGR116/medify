@@ -1,6 +1,6 @@
 import { useState } from "react";
-import { HealthiconsHappy, HealthiconsSadOutline, PhSmileyLight, PhSmileyMehLight, PhSmileySadLight } from "../svg/journal/FaceEmoji";
-import { IconamoonArrowDown2, IconamoonArrowUp2 } from "../svg/Arrows";
+import { HealthiconsHappy, HealthiconsSadOutline, PhSmileyLight, PhSmileyMehLight, PhSmileySadLight } from "../../svg/journal/FaceEmoji";
+import { IconamoonArrowDown2, IconamoonArrowUp2 } from "../../svg/Arrows";
 
 type Feeling = "Very Good" | "Good" | "Neutral" | "Sad" | "Very Sad";
 
