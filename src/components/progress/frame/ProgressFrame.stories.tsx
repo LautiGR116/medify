@@ -10,6 +10,7 @@ export const Default = {
     text: "5",
     progress : 20,
     tag: "You are level 5!",
-    subtag: "150 points to level up"
+    subtag: "150 points to level up",
+    isBadge: false
   }
 }
