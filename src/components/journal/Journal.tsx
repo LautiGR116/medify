@@ -54,7 +54,7 @@ const Arrow = ({ isOpen, returnClick }: { isOpen: boolean; returnClick: () => vo
   return (
     <button className="bg-inherit" onClick={returnClick}>
       <div className="flex items-center">
-        {isOpen ? <IconamoonArrowDown2 className="text-scale-1000 size-3 border-none" /> : <IconamoonArrowUp2 className="text-scale-1000 size-3 border-none" />}
+        {!isOpen ? <IconamoonArrowDown2 className="text-scale-1000 size-3 border-none" /> : <IconamoonArrowUp2 className="text-scale-1000 size-3 border-none" />}
       </div>
     </button>
   );

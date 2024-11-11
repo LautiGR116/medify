@@ -32,14 +32,14 @@ const IconTimePicker = () => {
               setAlarm(newAlarm);
             }}
             sx={{
-              width: '95px',
+              width: '100px',
               height: '32px',
               '& .MuiInputBase-input': {
                 color: '#1B2F3D',
                 fontSize: '20px',
                 fontWeight: '400', 
                 fontFamily: 'SF Pro Display',
-                padding: '0 0.5px',
+                padding: '0 2.2px',
               },
               '& .MuiOutlinedInput-root': {
                 backgroundColor: '#CCE5E2',
@@ -49,17 +49,18 @@ const IconTimePicker = () => {
               <TextField
                 {...params}
                 sx={{
-                  paddingRight: '8px',
+                  
+                  width: '100px',
+                  height: '32px',
                   '& .MuiOutlinedInput-root': {
-                    width: '90px',
-                    height: '32px',
                     backgroundColor: '#CCE5E2',
                   },
                   '& .MuiInputBase-input': {
                     color: '#1B2F3D',
                     fontSize: '20px',
+                    fontWeight: '400', 
                     fontFamily: 'SF Pro Display',
-                    fontWeight: 400,
+                    padding: '0 1px',
                   },
                 }}
               />
