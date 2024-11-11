@@ -30,7 +30,7 @@ const Journal = ({ journals, time, day }: JournalI) => {
       <div className="flex flex-col justify-between items-start py-0.5 px-1 w-full">
         <div className="flex items-center justify-between w-full">
           <span className="text-body font-bold text-scale-1000 px-0">{day}</span>
-          {!isOpen && <span className="ml-2 text-scale-200">{time}</span>}
+          {!isOpen && <span className="ml-2 text-scale-600">{time}</span>}
           <div className="ml-auto">
             <Arrow isOpen={isOpen} returnClick={() => setIsOpen(!isOpen)} />
           </div>
@@ -39,7 +39,7 @@ const Journal = ({ journals, time, day }: JournalI) => {
           {isOpen
             ? journals.map((journal, index) => (
                 <div key={index}>
-                  <span className="text-caption2 font-bold text-scale-200 px-3">{"At " + time}</span>
+                  <span className="text-caption2 font-bold text-scale-600 px-3">{"At " + time}</span>
                   <IndJournal {...journal} />
                 </div>
               ))
