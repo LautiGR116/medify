@@ -21,7 +21,7 @@ const IndJournal = ({ feeling, description }: IndJournalI) => {
   return (
     <div className="bg-scale-100 w-journalContent h-journalContent border-gray-300 rounded-lg">
       <div className="flex items-start">
-        <div className="flex items-start pr-2">
+        <div className="flex items-start pr-2 pt-1.5">
           {FeelingToIcon[feeling]}
         </div>
         <div className="mt-2">
