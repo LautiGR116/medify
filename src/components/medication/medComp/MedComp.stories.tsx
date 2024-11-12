@@ -13,30 +13,38 @@ export const Default = {
     days: [
       {
         title: "Mo",
+        inmutable: true
       },
       {
         title: "Tu",
-        variant: "disable"
+        variant: "active",
+        inmutable: true
       },
       {
         title: "We",
-        variant: "active"
+        variant: "disable",
+        inmutable: true
       },
       {
         title: "Th",
-        variant: "disable"
+        variant: "disable",
+        inmutable: true
       },
       {
         title: "Fr",
-        variant: "active"
+        variant: "active",
+        inmutable: true
       },
       {
         title: "Sa",
-        variant: "disable"
+        variant: "disable",
+        inmutable: true
       },
       {
         title: "Su",
-        variant: "disable"
+        variant: "disable",
+        inmutable: true
+
       }
     ],
     pillsLeft: 5

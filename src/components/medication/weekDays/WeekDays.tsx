@@ -30,7 +30,7 @@ const WeekDay = ({ title, inmutable = false, variant = "disable" }: WeekDayProps
     }
 
     return (
-      <span className={selectVariant()}  onClick={() => setVariantState(variantState === "active" ? "disable" : "active")}>
+      <span className={selectVariant()}  onClick={() => !inmutable && setVariantState(variantState === "active" ? "disable" : "active")}>
         {title}
       </span>
   );

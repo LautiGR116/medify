@@ -15,7 +15,7 @@ const MedInfo = ({ pillsLeft, time, days }: MedInfoProps) => {
             <div className="space-y-1">
                 <IconText
                     icon={<HalfFilledPill width={16} height={16} />}
-                    text={`${pillsLeft} amount of pills left`}
+                    text={`${pillsLeft} dosis in stock`}
                     size={16}
                 />
                 <IconText

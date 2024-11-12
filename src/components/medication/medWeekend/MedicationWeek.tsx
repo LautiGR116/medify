@@ -4,6 +4,7 @@ import WeekDay from "../weekDays/WeekDays";
 export type Day = {
   title: 'Mo' | 'Tu' | 'We' | 'Th' | 'Fr' | 'Sa' | 'Su';
   variant: 'active' | 'disable';
+  inmutable: boolean;
 };
 
 export interface MedicationWeekProps {
@@ -17,7 +18,7 @@ const ContainerConstraints = {
 const MedicationWeek: React.FC<MedicationWeekProps> = ({ days }) => {
   return (
     <div className={ContainerConstraints.container}>
-    {days.map((day : Day, index) => (<WeekDay key={index} title={day.title} inmutable={false} variant={"active"} />))}
+    {days.map((day : Day, index) => (<WeekDay key={index} title={day.title} inmutable={day.inmutable} variant={day.variant} />))}
   </div>
   );
 };
