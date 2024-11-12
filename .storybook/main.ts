@@ -14,5 +14,17 @@ const config: StorybookConfig = {
     name: "@storybook/react-vite",
     options: {},
   },
+  viteFinal: (config) => {
+    config.optimizeDeps = {
+      ...(config.optimizeDeps || {}),
+      esbuildOptions: {
+        loader: {
+          ".js": "jsx", // Indica a Vite que cargue archivos `.js` como JSX
+        },
+      },
+    };
+    return config;
+  },
 };
+
 export default config;

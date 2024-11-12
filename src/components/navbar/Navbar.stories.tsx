@@ -1,7 +1,7 @@
 import {MdiProgressStar, MynauiCalendar } from "../svg/navbar/Calendar";
 import { MdiLightHeart } from "../svg/navbar/Heart";
 import { IcRoundHome } from "../svg/navbar/Home";
-import { MaterialSymbolsLightPill } from "../svg/navbar/Pill";
+import {TablerPillFilled} from "../svg/navbar/Pill";
 import { MaterialSymbolsCheck } from "../svg/progressButton/Completed";
 import NavBar from "./Navbar";
 
@@ -17,7 +17,7 @@ export const Default = {
         icon: <IcRoundHome />,
       },
       {
-        icon: <MaterialSymbolsLightPill />,
+        icon: <TablerPillFilled />,
       },
       {
         icon: <MynauiCalendar />,

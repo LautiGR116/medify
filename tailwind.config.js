@@ -61,7 +61,7 @@ module.exports = {
         },
         scale: {
           100: "#FAFAFA",
-          200: "#616161",
+
           300: "#D4D4D4",
           400: "#EBEBEB",
           500: "#BFC1C5", // color base
