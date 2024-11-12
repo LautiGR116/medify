@@ -9,7 +9,7 @@ export const Default = {
     args : {
         title: "Title",
         text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-        destructiveButtonText: "Destruct",
+        destructiveButtonText: "Button",
         confirmButtonText: "Button"
     }
 }
