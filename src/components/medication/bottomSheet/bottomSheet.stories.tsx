@@ -3,7 +3,7 @@ import { Meta, StoryFn } from '@storybook/react';
 import { BottomSheet, BottomSheetReminderOnly } from './BottomSheet';
 
 export default {
-    title: 'Components/BottomSheet',
+    title: 'Medication/BottomSheet',
     component: BottomSheet,
 } as Meta;
 

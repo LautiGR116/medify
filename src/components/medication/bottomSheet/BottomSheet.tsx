@@ -1,12 +1,12 @@
 import React from "react";
 import { MdiTrash } from "../../svg/common/Common";
-import InputField from "../../common/InputField";
+import InputField from "../../common/inputField/InputField";
 import Counter from "../counter/Counter";
 import { PhMinusFill, PhPlusFill } from "../../svg/medication/Medication";
 import MedicationWeek from "../medWeekend/MedicationWeek";
-import TimePicker from "../../timePicker/TimePicker";
-import Reminder from "../../common/Reminder";
-import Button, {ButtonState} from "../../common/Button";
+import TimePicker from "../timePicker/TimePicker";
+import Reminder from "../reminder/Reminder";
+import Button, {ButtonState} from "../../common/button/Button";
 
 const ReminderOptions = [
     { label: "Half an hour before", checked: true },
