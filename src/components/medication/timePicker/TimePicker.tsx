@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { LocalizationProvider } from '@mui/x-date-pickers/LocalizationProvider';
 import { AdapterDayjs } from '@mui/x-date-pickers/AdapterDayjs';
 import { MobileTimePicker } from '@mui/x-date-pickers';
-import { MdiLightPlusCircle } from '../../svg/timePicker/TimePicker';
+import {MynauiPlusCircle} from '../../svg/timePicker/TimePicker';
 import { TimeStamp } from './TimeStamp';
 import { IconButton, TextField } from '@mui/material';
 import dayjs, { Dayjs } from 'dayjs';
@@ -38,7 +38,7 @@ const IconTimePicker = () => {
                 ))}
                 <div>
                     <IconButton onClick={() => setShowTimePicker(true)} className="focus:outline-none">
-                        <MdiLightPlusCircle className="size-6 text-scale-1000" />
+                        <MynauiPlusCircle className="size-6 text-scale-1000" />
                     </IconButton>
                     <LocalizationProvider dateAdapter={AdapterDayjs}>
                         <MobileTimePicker

@@ -2,7 +2,7 @@ import React from "react";
 import { MdiTrash } from "../../svg/common/Common";
 import InputField from "../../common/inputField/InputField";
 import Counter from "../counter/Counter";
-import { PhMinusFill, PhPlusFill } from "../../svg/medication/Medication";
+import {MdiRename, PhMinusFill, PhPlusFill} from "../../svg/medication/Medication";
 import MedicationWeek from "../medWeekend/MedicationWeek";
 import TimePicker from "../timePicker/TimePicker";
 import Reminder from "../reminder/Reminder";
@@ -23,7 +23,7 @@ const BottomSheet = () => (
         </div>
         <div className="w-[357px] h-[660px] flex flex-col justify-between">
             <Section title="Name of medication">
-                <InputField icon={<MdiTrash />} label="Medicine" />
+                <InputField icon={<MdiRename />} label="Medicine" />
             </Section>
             <div className="w-full flex justify-between">
                 <CounterSection title="Doses" />

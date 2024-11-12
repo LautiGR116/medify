@@ -1,8 +1,7 @@
-import {MdiProgressStar, MynauiCalendar } from "../../svg/navbar/Calendar";
-import { MdiLightHeart } from "../../svg/navbar/Heart";
-import { IcRoundHome } from "../../svg/navbar/Home";
+import {MageCalendarFill, MdiProgressStar } from "../../svg/navbar/Calendar";
+import {LineMdHeartFilled, MdiLightHeart} from "../../svg/navbar/Heart";
+import {MajesticonsHome} from "../../svg/navbar/Home";
 import {TablerPillFilled} from "../../svg/navbar/Pill";
-import { MaterialSymbolsCheck } from "../../svg/progressButton/Completed";
 import NavBar from "./Navbar";
 
 export default {
@@ -14,19 +13,19 @@ export const Default = {
   args: {
     pages: [
       {
-        icon: <IcRoundHome />,
+        icon: <MajesticonsHome />,
       },
       {
         icon: <TablerPillFilled />,
       },
       {
-        icon: <MynauiCalendar />,
+        icon: <MageCalendarFill />,
       },
       {
-        icon: <MdiLightHeart />,
+        icon: <LineMdHeartFilled />,
       },
       {
-        icon: <MdiProgressStar/>,
+        icon: <MdiProgressStar />,
       }
     ]
   }
