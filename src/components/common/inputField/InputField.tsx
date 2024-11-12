@@ -27,6 +27,8 @@ const TextInput: React.FC<TextInputProps> = ({
         text: `bg-transparent ${isDisabled ? 'text-scale-600' : 'text-scale-1000'}`,
     };
 
+    const inputSyle = variant == 'fulfilled'? 'placeholder-scale-700 text-scale-1000' : ''
+
     const styles = `${baseStyles} ${variantStyles[variant]} ${isDisabled ? 'cursor-not-allowed' : ''}`;
 
     return (
@@ -42,7 +44,7 @@ const TextInput: React.FC<TextInputProps> = ({
                 type="text"
                 placeholder={label}
                 disabled={isDisabled}
-                className="flex-1 bg-transparent outline-none placeholder-current"
+                className={`flex-1 bg-transparent outline-none placeholder-current ${inputSyle}`}
                 {...props}
             />
         </div>
