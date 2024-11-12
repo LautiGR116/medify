@@ -75,7 +75,12 @@ const ProgressButton: React.FC<ProgressButtonProps> = ({
       <div className="relative z-10 flex items-center justify-between w-full h-full">
         <span className="font-medium text-callout1 font-sans">{text}</span>
         {completed ? (
-          <MaterialSymbolsCheck className="size-6" />
+          <div className="flex items-center space-x-2">
+            <span className="text-callout1 font-medium font-sans text-left">
+              {oneClick ? displayText : timeText}
+            </span>
+            <MaterialSymbolsCheck className="size-6" />
+          </div>
         ) : (
           <div className="flex items-center space-x-2">
             <span className="text-callout1 font-medium font-sans text-left">{formatTime()}</span>
