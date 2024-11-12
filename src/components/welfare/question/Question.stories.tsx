@@ -11,11 +11,22 @@ export const Default = {
     questionnaire: {
       qNumber: 1,
       question: "How long did you sleep last night?"
-    }
+    },
+    variant: 'Question'
   }
 }
 
 export const Completed = {
   key: "completed",
-  args: {}
+  args: {
+    variant: 'Success'
+  }
+}
+
+export const Bonus = {
+  key: "bonus",
+  args: {
+    variant: 'Bonus',
+    question: "Do you want to give feedback?"
+  }
 }
