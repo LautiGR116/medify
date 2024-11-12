@@ -4,7 +4,7 @@ import ProgressFrame from '../components/progress/frame/ProgressFrame';
 import ProgressButton from '../components/progress/button/ProgressButton';
 import NavBar from '../components/navbar/Navbar';
 import { IcRoundHome } from '../components/svg/navbar/Home';
-import { MaterialSymbolsLightPill } from '../components/svg/navbar/Pill';
+import { TablerPillFilled } from '../components/svg/navbar/Pill';
 import { MdiProgressStar, MynauiCalendar } from '../components/svg/navbar/Calendar';
 import { MdiLightHeart } from '../components/svg/navbar/Heart';
 import {OnfireBadge} from "../components/svg/badge/OnfireBadge";
@@ -21,7 +21,7 @@ const progressData = {
 
 const navPages = [
     { icon: <IcRoundHome /> },
-    { icon: <MaterialSymbolsLightPill /> },
+    { icon: <TablerPillFilled /> },
     { icon: <MynauiCalendar /> },
     { icon: <MdiLightHeart /> },
     { icon: <MdiProgressStar /> },
