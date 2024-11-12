@@ -7,7 +7,8 @@ function App() {
   return (
     <>
       <div>
-        <Home />
+        {/* <Home /> */}
+        <Progress />
       </div>
     </>
   )

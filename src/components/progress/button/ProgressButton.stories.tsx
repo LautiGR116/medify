@@ -16,3 +16,14 @@ export const Default = {
       timeText: "0:10",
   }
 };
+
+export const OneClick = {
+  args : {
+    text: "MEDITATE",
+    textColor: "text-scale-1000",
+    unfilledColor : "bg-scale-100",
+    filledColor : "bg-primary-800",
+    oneClick: true,
+    displayText: "2L"
+}
+}

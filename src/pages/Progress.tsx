@@ -63,7 +63,8 @@ const Progress: React.FC = () => {
                                 textColor="text-scale-1000"
                                 unfilledColor="bg-scale-100"
                                 filledColor="bg-primary-800"
-                                timeText="0:30"
+                                oneClick
+                                displayText="2L"
                             />
                         </section>
                     </>

@@ -8,11 +8,13 @@ interface ProgressButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
   textColor: string;
   unfilledColor: string;
   filledColor: string;
-  timeText: string;
+  timeText?: string;
+  displayText?: string; 
+  oneClick?: boolean;
 }
 
 const ProgressButton: React.FC<ProgressButtonProps> = ({
-  text, textColor, filledColor, unfilledColor, timeText, ...props
+  text, textColor, filledColor, unfilledColor, timeText = "00:01", displayText = "" , oneClick, ...props
 }) => {
   const [minutes, seconds] = timeText.split(':').map(Number);
   const totalSeconds = minutes * 60 + seconds;
@@ -21,6 +23,9 @@ const ProgressButton: React.FC<ProgressButtonProps> = ({
   const [completed, setCompleted] = useState(false);
 
   const formatTime = () => {
+    if (oneClick) {
+      return displayText;
+    }
     const mins = Math.floor(newTime / 60);
     const secs = newTime % 60;
     return `${String(mins).padStart(2, '0')}:${String(secs).padStart(2, '0')}`;
@@ -73,11 +78,11 @@ const ProgressButton: React.FC<ProgressButtonProps> = ({
           <MaterialSymbolsCheck className="size-6" />
         ) : (
           <div className="flex items-center space-x-2">
-            <span className="text-callout1 font-medium font-sans">{formatTime()}</span>
+            <span className="text-callout1 font-medium font-sans text-left">{formatTime()}</span>
             {isRunning ? (
-              <MaterialSymbolsPause className="size-6" />
+              oneClick? <MaterialSymbolsCheck className="size-6" /> : <MaterialSymbolsPause className="size-6" />
             ) : (
-              <MdiPlay className="size-6" />
+              oneClick? <MaterialSymbolsCheck className="size-6" /> : <MdiPlay className="size-6" />
             )}
           </div>
         )}
