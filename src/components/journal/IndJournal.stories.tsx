@@ -1,6 +1,4 @@
-import { Description } from "@mui/icons-material"
 import IndJournal from "./IndJournal"
-import { useState } from "react"
 
 export default { 
   title : 'Journal/IndJournal',

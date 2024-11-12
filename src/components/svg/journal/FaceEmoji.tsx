@@ -21,3 +21,7 @@ export function PhSmileyMehLight(props: SVGProps<SVGSVGElement>) {
 export function PhSmileyLight(props: SVGProps<SVGSVGElement>) {
 	return (<svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 256 256" {...props}><path fill="currentColor" d="M173.19 155c-9.92 17.16-26.39 27-45.19 27s-35.27-9.84-45.19-27a6 6 0 0 1 10.38-6c7.84 13.54 20.2 21 34.81 21s27-7.46 34.81-21a6 6 0 1 1 10.38 6M230 128A102 102 0 1 1 128 26a102.12 102.12 0 0 1 102 102m-12 0a90 90 0 1 0-90 90a90.1 90.1 0 0 0 90-90M92 118a10 10 0 1 0-10-10a10 10 0 0 0 10 10m72-20a10 10 0 1 0 10 10a10 10 0 0 0-10-10"></path></svg>);
 }
+
+export function MediaComplete(props: SVGProps<SVGSVGElement>) {
+	return (<svg xmlns="http://www.w3.org/2000/svg" width={36} height={36} viewBox="0 0 24 24" {...props}><g fill="currentColor" fillRule="evenodd" clipRule="evenodd"><path d="M12 3a9 9 0 1 0 0 18a9 9 0 0 0 0-18M1 12C1 5.925 5.925 1 12 1s11 4.925 11 11s-4.925 11-11 11S1 18.075 1 12"></path><path d="m17.608 9l-7.726 7.726L6 12.093l1.511-1.31l2.476 3.01l6.207-6.207z"></path></g></svg>);
+}

@@ -40,11 +40,10 @@ const Header = ({name, title, comp }: HeaderI) => {
            {title}
           </span>
         }
-        {comp ? (
-            <div className="flex-shrink-0 mb-2">
-              {React.cloneElement(comp.icon, { className: HeaderVariants.icon.join(" ") })}
-            </div>
-        ) : null}
+        <div className="flex-shrink-0 mb-2">
+          {comp ? React.cloneElement(comp.icon, {className: HeaderVariants.icon.join(" ")}) :
+              <div className="w-8 h-8"></div>}
+        </div>
       </div>
   );
 };
