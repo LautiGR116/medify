@@ -1,5 +1,6 @@
 import SOSIcon from '../icons/SOSIcon';
 import GearIcon from '../icons/GearIcon';
+import {GgProfile} from "../svg/common/Common";
 
 const Header = () => {
     return (
