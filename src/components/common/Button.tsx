@@ -49,7 +49,7 @@ const Button: React.FC<ButtonProps> = ({
     };
 
     // Combine all styles based on props
-    const styles = `${baseStyles} ${sizeStyles} ${variantStyles[variant][state]}`;
+    const styles = `${baseStyles} ${width} ${sizeStyles} ${variantStyles[variant][state]}`;
 
     return (
         <button className={styles} style={{ width }} disabled={state === 'disabled'} {...props}>
