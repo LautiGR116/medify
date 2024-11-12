@@ -21,7 +21,6 @@ const Reminder: React.FC<ReminderProps> = ({ options }) => {
                 <Checkbox
                     key={index}
                     shape="square"
-                    checked={checkbox.checked}
                     label={checkbox.label}
                 />
             ))}
