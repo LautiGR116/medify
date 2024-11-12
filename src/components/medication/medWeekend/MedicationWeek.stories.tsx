@@ -10,31 +10,24 @@ export const Default = {
     days: [
       {
         title: "Mo",
-        variant: "active"
       },
       {
         title: "Tu",
-        variant: "disable"
       },
       {
         title: "We",
-        variant: "active"
       },
       {
         title: "Th",
-        variant: "disable"
       },
       {
         title: "Fr",
-        variant: "active"
       },
       {
-        title: "Sa",
-        variant: "disable"
+        title: "Sa"
       },
       {
         title: "Su",
-        variant: "disable"
       }
     ]
   }

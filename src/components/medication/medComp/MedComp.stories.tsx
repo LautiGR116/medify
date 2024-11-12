@@ -13,7 +13,6 @@ export const Default = {
     days: [
       {
         title: "Mo",
-        variant: "active"
       },
       {
         title: "Tu",

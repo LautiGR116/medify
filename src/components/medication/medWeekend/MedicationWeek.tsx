@@ -3,7 +3,6 @@ import WeekDay from "../weekDays/WeekDays";
 
 export type Day = {
   title: 'Mo' | 'Tu' | 'We' | 'Th' | 'Fr' | 'Sa' | 'Su';
-  variant: 'active' | 'disable';
 };
 
 export interface MedicationWeekProps {
@@ -17,7 +16,7 @@ const ContainerConstraints = {
 const MedicationWeek = (weekend : MedicationWeekProps) => { 
   return (
     <div className={ContainerConstraints.container}>
-    {weekend.days.map((day : Day) => (<WeekDay variant={day.variant} title={day.title}/>))}
+    {weekend.days.map((day : Day) => (<WeekDay title={day.title} />))}
   </div>
   );
 };
