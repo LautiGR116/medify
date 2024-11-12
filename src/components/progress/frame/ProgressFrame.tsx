@@ -74,7 +74,7 @@ const CustomButton = ({ text, rounded, onclick }: CustomButtonProps) => {
             className={`h-[50px] w-1/2 bg-scale-100 flex items-center justify-center relative ${rounded}`}
             onClick={onclick}
         >
-            <span className="font-sans text-body font-medium text-primary-500">{text}</span>
+            <span className="font-sans text-body font-medium text-primary-700">{text}</span>
             <div className="absolute bottom-0 w-full h-[2px] bg-primary-700 rounded-b-sm" />
         </button>
     );
