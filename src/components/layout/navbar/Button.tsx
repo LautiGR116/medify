@@ -31,16 +31,16 @@ const NavBarButton = ({ icon, ...props }: ButtonI) => {
   }
 
   return (
-    <button
-      className={`focus:outline-none border-none size-10 flex items-center justify-center rounded-full ${isActive().buttonVariant}`}
-      {...props}
-      onClick={handleTimeout}
-    >
-      {/* Div que ocupa todo el tamaño del botón y centra el icono */}
-      <div className="flex items-center justify-center w-full h-full">
-        {React.cloneElement(icon, { className: `${isActive().iconVariant} flex-shrink-0` })}
-      </div>
-    </button>
+      <button
+          className={`focus:outline-none border-none size-10 flex items-center justify-center rounded-full ${isActive().buttonVariant}`}
+          {...props}
+          onClick={handleTimeout}
+      >
+        {/* Div que ocupa todo el tamaño del botón y centra el icono */}
+        <div className="flex items-center justify-center w-full h-full">
+          {React.cloneElement(icon, { className: `${isActive().iconVariant} flex-shrink-0`, fill: active ? "currentColor" : undefined })}
+        </div>
+      </button>
   );
 };
 
