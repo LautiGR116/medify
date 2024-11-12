@@ -1,8 +1,8 @@
 import React, {useState} from 'react';
-import Header from '../components/header/Header';
+import Header from '../components/layout/header/Header';
 import ProgressFrame from '../components/progress/frame/ProgressFrame';
 import ProgressButton from '../components/progress/button/ProgressButton';
-import NavBar from '../components/navbar/Navbar';
+import NavBar from '../components/layout/navbar/Navbar'
 import { IcRoundHome } from '../components/svg/navbar/Home';
 import { TablerPillFilled } from '../components/svg/navbar/Pill';
 import { MdiProgressStar, MynauiCalendar } from '../components/svg/navbar/Calendar';
