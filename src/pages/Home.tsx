@@ -3,15 +3,10 @@ import UserInfoCard from '../components/home/UserInfoCard';
 import {GgProfile} from "../components/svg/common/Common";
 import MedicationHomeSection from "../components/home/MedicationHomeSection";
 import AppointmentHomeSection from "../components/home/AppointmentHomeSection";
-import Navbar from "../components/layout/navbar/Navbar";
-import {IcRoundHome} from "../components/svg/navbar/Home";
-import {TablerPillFilled} from "../components/svg/navbar/Pill";
-import {MdiProgressStar, MynauiCalendar} from "../components/svg/navbar/Calendar";
-import {MdiLightHeart} from "../components/svg/navbar/Heart";
+import { DefaultNavBar } from "../components/layout/navbar/Navbar";
+
 
 const Home = () => {
-  const navPages = [{icon: <IcRoundHome />}, {icon: <TablerPillFilled />}, {icon: <MynauiCalendar />}, {icon: <MdiLightHeart />}, {icon: <MdiProgressStar/>}]
-
   return (
       <div className="flex-col items-center flex justify-start bg-scale-400 rounded-[53px] w-[393px] h-[852px]">
         <div className="pb-3">
@@ -27,7 +22,7 @@ const Home = () => {
           <AppointmentHomeSection/>
         </div>
         <div className="pb-3">
-          <Navbar pages={navPages}/>
+          <DefaultNavBar/>
         </div>
       </div>
   );

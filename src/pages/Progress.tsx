@@ -2,11 +2,7 @@ import React, {useState} from 'react';
 import Header from '../components/layout/header/Header';
 import ProgressFrame from '../components/progress/frame/ProgressFrame';
 import ProgressButton from '../components/progress/button/ProgressButton';
-import NavBar from '../components/layout/navbar/Navbar'
-import { IcRoundHome } from '../components/svg/navbar/Home';
-import { TablerPillFilled } from '../components/svg/navbar/Pill';
-import { MdiProgressStar, MynauiCalendar } from '../components/svg/navbar/Calendar';
-import { MdiLightHeart } from '../components/svg/navbar/Heart';
+import { DefaultNavBar } from '../components/layout/navbar/Navbar'
 import {OnfireBadge} from "../components/svg/badge/OnfireBadge";
 import {HydratedBadge} from "../components/svg/badge/HydratedBadge";
 import {TravelerBadge} from "../components/svg/badge/TravelerBadge";
@@ -18,14 +14,6 @@ const progressData = {
     subtag: "150 points to level up",
     isBadge: true,
 };
-
-const navPages = [
-    { icon: <IcRoundHome /> },
-    { icon: <TablerPillFilled /> },
-    { icon: <MynauiCalendar /> },
-    { icon: <MdiLightHeart /> },
-    { icon: <MdiProgressStar /> },
-];
 
 const Progress: React.FC = () => {
 
@@ -83,7 +71,7 @@ const Progress: React.FC = () => {
                 )}
             </main>
 
-            <NavBar pages={navPages}/>
+            <DefaultNavBar />
         </div>
     );
 };
