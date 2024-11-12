@@ -2,7 +2,7 @@ import React from 'react';
 
 type ButtonVariant = 'filled' | 'outlined' | 'text';
 type ButtonSize = 'medium' | 'large';
-type ButtonState = 'default' | 'pressed' | 'disabled' | 'destructive';
+export type ButtonState = 'default' | 'pressed' | 'disabled' | 'destructive';
 
 interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
     variant?: ButtonVariant;
