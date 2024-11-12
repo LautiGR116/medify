@@ -8,8 +8,8 @@ export default {
 
 export const Default = {
 args: {
-  name: "medication",
-  title: "Medication",
+  name: "default",
+  title: "PageTitle",
   comp: {icon: <EmptyBox /> , iconColor: "text-primary-500", bgColor: ""}}
 }
 
