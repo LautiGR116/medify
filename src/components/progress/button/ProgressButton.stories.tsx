@@ -3,7 +3,7 @@ import { MaterialSymbolsPause } from '../../svg/progressButton/Pause';
 import { MdiPlay } from '../../svg/progressButton/Play';
 
 export default {
-  title: 'Progress/ProgressButton',
+  title: 'Progress/DailyChallenges',
   component: ProgressButton,
 };
 
@@ -16,3 +16,14 @@ export const Default = {
       timeText: "0:10",
   }
 };
+
+export const OneClick = {
+  args : {
+    text: "DRINK WATER",
+    textColor: "text-scale-1000",
+    unfilledColor : "bg-scale-100",
+    filledColor : "bg-primary-800",
+    oneClick: true,
+    displayText: "2L"
+}
+}

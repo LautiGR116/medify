@@ -1,4 +1,4 @@
-import React from 'react';
+import * as React from 'react';
 import "../../../index.css";
 
 const DayVariants = {
@@ -14,17 +14,25 @@ type DayVariant = keyof typeof DayVariants;
 
 export interface WeekDayProps {
   title: "Mo" | "Tu" | "We" | "Th" | "Fr" | "Sa" | "Su";
-  variant: DayVariant;
+  inmutable: boolean
+  variant: "active" | "disable"
 }
 
-const WeekDay = ({ variant, title }: WeekDayProps) => {
-  const variantClasses = DayVariants[variant];
-  const allClasses = variantClasses.join(' ');
+const WeekDay = ({ title, inmutable = false, variant = "disable" }: WeekDayProps) => {
+  const [variantState, setVariantState] = React.useState<"active" | "disable">(variant)
 
-  return (
-      <h1 className={allClasses}>
+
+  function selectVariant() {
+    if (inmutable) {
+      return DayVariants[variant].join('')
+    }
+    return DayVariants[variantState].join('')
+    }
+
+    return (
+      <span className={selectVariant()}  onClick={() => setVariantState(variantState === "active" ? "disable" : "active")}>
         {title}
-      </h1>
+      </span>
   );
 };
 

@@ -1,7 +1,7 @@
 import MedComp from "./MedComp";
 
 export default {
-  title: 'Medication/MedComp',
+  title: 'Medication/MedicationCard',
   component: MedComp,
 };
 
@@ -13,7 +13,6 @@ export const Default = {
     days: [
       {
         title: "Mo",
-        variant: "active"
       },
       {
         title: "Tu",

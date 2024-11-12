@@ -1,9 +1,9 @@
-import Header from '../components/header/Header';
+import Header from '../components/layout/header/Header';
 import UserInfoCard from '../components/home/UserInfoCard';
 import {GgProfile} from "../components/svg/common/Common";
 import MedicationHomeSection from "../components/home/MedicationHomeSection";
 import AppointmentHomeSection from "../components/home/AppointmentHomeSection";
-import Navbar from "../components/navbar/Navbar";
+import Navbar from "../components/layout/navbar/Navbar";
 import {IcRoundHome} from "../components/svg/navbar/Home";
 import {TablerPillFilled} from "../components/svg/navbar/Pill";
 import {MdiProgressStar, MynauiCalendar} from "../components/svg/navbar/Calendar";

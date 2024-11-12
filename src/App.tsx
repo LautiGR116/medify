@@ -6,8 +6,9 @@ import Home from "./pages/Home";
 function App() {
   return (
     <>
-      <div>
-        <Home />
+      <div className="flex flex-row gap-20">
+          <Home/>
+          <Progress />
       </div>
     </>
   )

@@ -6,7 +6,7 @@ export default {
   component: HomePageLevelStreak
 }
 
-export const dayStreak = {
+export const Streak = {
   key: "dayStreak",
   args: {
     icon: <MdiFire className="text-[#DF5430] w-[44px] h-[50px] transform scale-x-[-1]"/>,
@@ -15,7 +15,7 @@ export const dayStreak = {
   }
 }
 
-export const dontForget = {
+export const StreakOff = {
   key: "dayStreak",
   args: {
     icon: <MdiFire className="text-scale-600 w-[44px] h-[50px] transform scale-x-[-1]"/>,
