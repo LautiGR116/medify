@@ -3,7 +3,7 @@ import { Meta, StoryFn } from '@storybook/react';
 import Appointment from "./Appointment";
 
 export default {
-  title: 'Home/Appointment Reminder',
+  title: 'Home/AppointmentReminder',
   component: Appointment,
   argTypes: {
     variant: {
