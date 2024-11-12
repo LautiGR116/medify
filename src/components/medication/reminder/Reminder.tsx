@@ -1,21 +1,29 @@
-import React from 'react';
+import React, { useState } from "react";
+import Checkbox from "../../common/checkbox/CheckBox";
 
-interface ReminderProps {
-    icon: JSX.Element;
-    title: string;
-    subtitle: string;
+interface Option {
+    label: string;
+    checked?: boolean;
 }
 
-const Reminder: React.FC<ReminderProps> = ({ icon, title, subtitle }) => {
+interface ReminderProps {
+    options: Option[];
+}
+
+const Reminder: React.FC<ReminderProps> = ({ options }) => {
+    const [checkboxes] = useState(
+        options.map(option => ({ ...option, checked: option.checked || false }))
+    );
+
     return (
-        <div className="w-[358px] h-[88px] flex items-center p-3 bg-primary-500 rounded-[10px] border border-primary-600">
-            <div className="w-[68px] h-[68px] flex items-center justify-center rounded-full bg-scale-100">
-                {React.cloneElement(icon, { className: 'text-primary-600', height: 48, width: 48 })}
-            </div>
-            <div className="pl-2 space-y-2 text-left">
-                <div className="font-bold text-title3 text-scale-1000">{title}</div>
-                <div className="text-callout1 font-medium text-scale-1000">{subtitle}</div>
-            </div>
+        <div className="space-y-3">
+            {checkboxes.map((checkbox, index) => (
+                <Checkbox
+                    key={index}
+                    shape="square"
+                    label={checkbox.label}
+                />
+            ))}
         </div>
     );
 };

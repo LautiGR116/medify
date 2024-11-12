@@ -3,6 +3,7 @@ import WeekDay from "../weekDays/WeekDays";
 
 export type Day = {
   title: 'Mo' | 'Tu' | 'We' | 'Th' | 'Fr' | 'Sa' | 'Su';
+  variant: 'active' | 'disable';
 };
 
 export interface MedicationWeekProps {
@@ -10,13 +11,13 @@ export interface MedicationWeekProps {
 }
 
 const ContainerConstraints = {
-  container: "flex items-center space-x-4"
+  container: "flex justify-between items-center w-[332px]"
 }
 
-const MedicationWeek = (weekend : MedicationWeekProps) => { 
+const MedicationWeek: React.FC<MedicationWeekProps> = ({ days }) => {
   return (
     <div className={ContainerConstraints.container}>
-    {weekend.days.map((day : Day) => (<WeekDay title={day.title} />))}
+    {days.map((day : Day, index) => (<WeekDay key={index} title={day.title} inmutable={false} variant={"active"} />))}
   </div>
   );
 };

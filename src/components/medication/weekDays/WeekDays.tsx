@@ -3,10 +3,10 @@ import "../../../index.css";
 
 const DayVariants = {
   active: [
-    "size-8 bg-primary-500 flex items-center justify-center text-caption1 text-scale-1000 rounded-full font-medium font-sans"
+    "size-9 bg-primary-500 flex items-center justify-center text-caption1 text-scale-1000 rounded-full font-medium font-sans"
   ],
   disable: [
-    "size-8 bg-scale-100 flex items-center justify-center text-caption1 text-scale-600 rounded-full font-medium font-sans"
+    "size-9 bg-scale-100 flex items-center justify-center text-caption1 text-scale-600 rounded-full font-medium font-sans"
   ]
 };
 

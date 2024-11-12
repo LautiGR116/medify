@@ -1,7 +1,7 @@
 import ProgressFrame from "./ProgressFrame";
 
 export default {
-  title: 'Progress/Frame',
+  title: 'Progress/ProgressFrame',
   component: ProgressFrame 
 }
 

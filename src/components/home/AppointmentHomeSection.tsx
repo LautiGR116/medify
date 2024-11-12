@@ -1,5 +1,5 @@
 import Title from "./titles/Title";
-import Appointment from "./appointments/Appointment";
+import Appointment from "./appointmentReminder/Appointment";
 
 
 const AppointmentHomeSection = () => {
