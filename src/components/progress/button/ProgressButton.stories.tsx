@@ -19,7 +19,7 @@ export const Default = {
 
 export const OneClick = {
   args : {
-    text: "MEDITATE",
+    text: "DRINK WATER",
     textColor: "text-scale-1000",
     unfilledColor : "bg-scale-100",
     filledColor : "bg-primary-800",

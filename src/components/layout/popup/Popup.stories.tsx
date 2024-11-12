@@ -8,7 +8,7 @@ export default {
 export const Default = {
     args : {
         title: "Title",
-        text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+        text: "Are you sure you want to delete this item? This action cannot be undone.",
         destructiveButtonText: "Button",
         confirmButtonText: "Button"
     }
