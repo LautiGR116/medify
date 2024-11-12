@@ -16,14 +16,13 @@ const ContainerConstraints = {
 
 const MedicationWeek: React.FC<MedicationWeekProps> = ({ days }) => {
   return (
-      <div className={ContainerConstraints.container}>
-        {days.map((day: Day, index) => (
-            <WeekDay key={index} variant={day.variant} title={day.title} />
-        ))}
-      </div>
+    <div className={ContainerConstraints.container}>
+    {days.map((day : Day, index) => (<WeekDay key={index} title={day.title} inmutable={false} variant={"active"} />))}
+  </div>
   );
 };
 
 MedicationWeek.displayName = 'MedicationWeek';
+
 
 export default MedicationWeek;

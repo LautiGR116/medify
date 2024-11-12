@@ -5,18 +5,17 @@ export default {
   component: WeekDay,
 };
 
-export const Active = {
-  key: "active", 
+export const Default = {
   args : {
-    variant : "active",
     title : "We"
   }
 };
 
-export const Disable = {
-  key: "disable",
+export const Inmutable = {
   args : {
-    variant : "disable",
-    title : "We"
-  }
+    title: "We",
+    inmutable : true,
+    variant: "active"
+  } 
 }
+
