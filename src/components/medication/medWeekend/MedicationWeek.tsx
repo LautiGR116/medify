@@ -11,18 +11,19 @@ export interface MedicationWeekProps {
 }
 
 const ContainerConstraints = {
-  container: "flex items-center space-x-4"
+  container: "flex justify-between items-center w-[332px]"
 }
 
-const MedicationWeek = (weekend : MedicationWeekProps) => { 
+const MedicationWeek: React.FC<MedicationWeekProps> = ({ days }) => {
   return (
-    <div className={ContainerConstraints.container}>
-    {weekend.days.map((day : Day) => (<WeekDay variant={day.variant} title={day.title}/>))}
-  </div>
+      <div className={ContainerConstraints.container}>
+        {days.map((day: Day, index) => (
+            <WeekDay key={index} variant={day.variant} title={day.title} />
+        ))}
+      </div>
   );
 };
 
 MedicationWeek.displayName = 'MedicationWeek';
-
 
 export default MedicationWeek;

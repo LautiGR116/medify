@@ -2,7 +2,7 @@ import React from 'react';
 
 type ButtonVariant = 'filled' | 'outlined' | 'text';
 type ButtonSize = 'medium' | 'large';
-type ButtonState = 'default' | 'pressed' | 'disabled' | 'destructive';
+export type ButtonState = 'default' | 'pressed' | 'disabled' | 'destructive';
 
 interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
     variant?: ButtonVariant;
@@ -49,7 +49,7 @@ const Button: React.FC<ButtonProps> = ({
     };
 
     // Combine all styles based on props
-    const styles = `${baseStyles} ${sizeStyles} ${variantStyles[variant][state]}`;
+    const styles = `${baseStyles} ${width} ${sizeStyles} ${variantStyles[variant][state]}`;
 
     return (
         <button className={styles} style={{ width }} disabled={state === 'disabled'} {...props}>
