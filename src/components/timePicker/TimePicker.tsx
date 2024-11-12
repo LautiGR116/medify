@@ -49,7 +49,7 @@ const IconTimePicker = () => {
                             onChange={handleAddTime}
                             // Hace que el picker sea invisible visualmente
                             sx={{
-                            visibility: 'hidden', // Hace que el componente no sea visible
+                            visibility: 'hidden', // Hace que el componente no sea vi   sible
                             position: 'absolute', // Saca el componente del flujo de diseño principal
                             left: '-9999px', // Lo coloca fuera de la pantalla
                             }}

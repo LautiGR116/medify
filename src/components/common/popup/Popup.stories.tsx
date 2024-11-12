@@ -8,7 +8,7 @@ export default {
 export const Default = {
     args : {
         title: "Title",
-        text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus luctus urna sed urna ultricies ac tempor dui sagittis. In condimentum facilisis porta",
+        text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
         destructiveButtonText: "Destruct",
         confirmButtonText: "Button"
     }

@@ -17,7 +17,7 @@ const Popup: React.FC<PopupProps> = ({ title, text, destructiveButtonText, confi
                 {title}
             </div>
             {/* div del texto */}
-            <div className="py-2 px-4 text-scale-1000 text-caption1 font-regular text-center">
+            <div className="py-2 px-4 text-scale-1000 text-callout1 font-medium text-center">
                 {text}
             </div>
             {/* div de los buttons */}

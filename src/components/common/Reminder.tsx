@@ -16,7 +16,7 @@ const Reminder: React.FC<ReminderProps> = ({ options }) => {
     );
 
     return (
-        <div className="space-y-2">
+        <div className="space-y-3">
             {checkboxes.map((checkbox, index) => (
                 <Checkbox
                     key={index}
