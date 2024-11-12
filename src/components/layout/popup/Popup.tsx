@@ -1,14 +1,15 @@
 import React from 'react';
-import Button from "../../common/button/Button";
+import Button, {ButtonState, ButtonVariant} from "../../common/button/Button";
 
 interface PopupProps {
     title: string;
     text: string;
     destructiveButtonText: string;
     confirmButtonText: string;
+    variantType: ButtonVariant
 }
 
-const Popup: React.FC<PopupProps> = ({ title, text, destructiveButtonText, confirmButtonText }) => {
+const Popup: React.FC<PopupProps> = ({ title, text, destructiveButtonText, variantType, confirmButtonText }) => {
     const buttonWidth = 70
     return (
         <div className="w-[241px] h-[194px] flex flex-col items-center justify-between bg-scale-100 rounded-[10px]">
@@ -32,7 +33,7 @@ const Popup: React.FC<PopupProps> = ({ title, text, destructiveButtonText, confi
                     >
                     </Button>
                     <Button
-                        variant="filled"
+                        variant={variantType}
                         state="default"
                         size="large"
                         label={confirmButtonText}

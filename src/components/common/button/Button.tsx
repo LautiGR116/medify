@@ -1,6 +1,6 @@
 import React from 'react';
 
-type ButtonVariant = 'filled' | 'outlined' | 'text';
+export type ButtonVariant = 'filled' | 'outlined' | 'text';
 type ButtonSize = 'medium' | 'large';
 export type ButtonState = 'default' | 'pressed' | 'disabled' | 'destructive';
 
@@ -35,10 +35,10 @@ const Button: React.FC<ButtonProps> = ({
             destructive: 'bg-alert-500 text-scale-1000',
         },
         outlined: {
-            default: 'border border-primary-600 text-primary-600',
-            pressed: 'border border-primary-500 text-primary-500',
-            disabled: 'border border-scale-500 text-scale-700 cursor-not-allowed',
-            destructive: 'border border-alert-500 text-alert-500',
+            default: 'border border-primary-600 text-primary-600 bg-transparent',
+            pressed: 'border border-primary-500 text-primary-500 bg-transparent',
+            disabled: 'border border-scale-500 text-scale-700 cursor-not-allowed bg-transparent',
+            destructive: 'border border-alert-500 text-alert-500 bg-transparent',
         },
         text: {
             default: 'text-primary-600 bg-transparent',
