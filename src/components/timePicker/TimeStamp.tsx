@@ -12,10 +12,12 @@ export function TimeStamp({ time, onClick }: TimeDisplayProps) {
             <span className="text-base mr-2">
                 {time}
             </span>
-            {React.cloneElement(<MdiTrash />, {
+            <div onClick={() => onClick()}>
+                {React.cloneElement(<MdiTrash />, {
                 width: 16,
                 height: 16,
-            })}
+                })}
+            </div>
         </div>
     );
 }

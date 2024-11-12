@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
 import { LocalizationProvider } from '@mui/x-date-pickers/LocalizationProvider';
 import { AdapterDayjs } from '@mui/x-date-pickers/AdapterDayjs';
-import { MobileTimePicker } from '@mui/x-date-pickers/MobileTimePicker';
+import { MobileTimePicker } from '@mui/x-date-pickers';
 import { MdiLightPlusCircle } from '../svg/timePicker/TimePicker';
 import { TimeStamp } from './TimeStamp';
-import { IconButton } from '@mui/material';
+import { IconButton, TextField } from '@mui/material';
 import dayjs, { Dayjs } from 'dayjs';
 
 const IconTimePicker = () => {
@@ -40,14 +40,21 @@ const IconTimePicker = () => {
                     <IconButton onClick={() => setShowTimePicker(true)} className="focus:outline-none">
                         <MdiLightPlusCircle className="size-6 text-scale-1000" />
                     </IconButton>
-                    <MobileTimePicker
-                        open={showTimePicker}
-                        onClose={() => setShowTimePicker(false)}
-                        ampm
-                        value={selectedTime}
-                        onChange={handleAddTime}
-
-                    />
+                    <LocalizationProvider dateAdapter={AdapterDayjs}>
+                        <MobileTimePicker
+                            open={showTimePicker}
+                            onClose={() => setShowTimePicker(false)}
+                            ampm
+                            value={selectedTime}
+                            onChange={handleAddTime}
+                            // Hace que el picker sea invisible visualmente
+                            sx={{
+                            visibility: 'hidden', // Hace que el componente no sea visible
+                            position: 'absolute', // Saca el componente del flujo de diseño principal
+                            left: '-9999px', // Lo coloca fuera de la pantalla
+                            }}
+                        />
+                    </LocalizationProvider>
                 </div>
             </div>
         </LocalizationProvider>
