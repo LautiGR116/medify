@@ -1,14 +1,14 @@
 import './App.css'
-import { MdiFire } from './components/svg/home/HomeIcons'
-import DefaultPhone from './pages/DefaultPhone'
+
+import Progress from "./pages/Progress";
 
 function App() {
   return (
-    <DefaultPhone pageName={'home'} title={'Welcome'} comp={<MdiFire/>} content={
-      <>
-        <span> Basta Tucu</span>
-      </>
-    } />
+    <>
+      <div>
+        <Progress />
+      </div>
+    </>
   )
 }
 
